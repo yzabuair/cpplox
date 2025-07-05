@@ -14,6 +14,9 @@
 
 namespace cpplox {
 
+// Forwards
+class LoxInstance;
+
 class Interpreter: public ExprVisitor,
                    public StmtVisitor {
 private:
@@ -41,6 +44,9 @@ public:
     void visit(const VariableExpr& expr) override;
     void visit(const LogicalExpr& expr) override;
     void visit(const CallExpr& expr) override;
+    void visit(const GetExpr& expr) override;
+    void visit(const SetExpr& expr) override;
+    void visit(const ThisExpr& expr) override;
                        
 // StmtVisitor Implementation
 public:
@@ -52,6 +58,7 @@ public:
     void visit(const WhileStatement& stmt) override;
     void visit(const FunctionDeclStatementProxy& stmt_proxy) override;
     void visit(const ReturnStatement& stmt) override;
+    void visit(const ClassDeclStatement& stmt) override;
    
 // Internal Helpers
 private:
@@ -63,7 +70,8 @@ private:
     bool is_thruthy_(const ValueType& value);
     bool is_equal_(const ValueType& a, const ValueType& b);
     void stringify_();
-    
+    Callable make_func_callable_(const std::shared_ptr<FunctionDeclStatement>& stmt,
+                                 const std::shared_ptr<LoxInstance>& instance = nullptr);
 };
 
 } // namespace cpplox

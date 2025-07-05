@@ -24,6 +24,10 @@ std::unique_ptr<Stmt> Parser::declaration_() {
         return function_decl_statement_("function");
     }
     
+    if (match_({TokenType::CLASS})) {
+        return class_decl_statement_();
+    }
+    
     return statement_();
 }
 
@@ -197,6 +201,28 @@ std::unique_ptr<Stmt> Parser::function_decl_statement_(const std::string& kind) 
     return FunctionDeclStatementProxy::create(name, params, std::move(body));
 }
 
+std::unique_ptr<Stmt> Parser::class_decl_statement_() {
+    Token name = consume_(TokenType::IDENTIFIER, "Expect class name");
+    std::unique_ptr<VariableExpr> super_class;
+    if (match_({TokenType::LESS})) {
+        consume_(TokenType::IDENTIFIER, "Expect superclass name.");
+        super_class = VariableExpr::create(previous_());
+    }
+    consume_(TokenType::LEFT_BRACE, "Expect '{' before class body.");
+    
+    std::vector<std::shared_ptr<FunctionDeclStatement>> methods;
+    while(!check_(TokenType::RIGHT_BRACE) && !is_at_end_()) {
+        auto stmt = function_decl_statement_("method");
+        auto proxy = dynamic_cast<FunctionDeclStatementProxy*>(stmt.get());
+        
+        methods.push_back(proxy->stmt);
+    }
+    
+    consume_(TokenType::RIGHT_BRACE, "Expect '}' after body.");
+    
+    return ClassDeclStatement::create(name, std::move(super_class), std::move(methods));
+}
+
 std::vector<std::unique_ptr<Stmt>> Parser::block_() {
     std::vector<std::unique_ptr<Stmt>> statements;
     
@@ -223,6 +249,9 @@ std::unique_ptr<Expr> Parser::assignment_() {
         if (dynamic_cast<VariableExpr*>(expr.get())) {
             auto name = dynamic_cast<VariableExpr*>(expr.get())->name;
             return AssignExpr::create(name, std::move(value));
+        } else if (dynamic_cast<GetExpr*>(expr.get())) {
+            auto get_expr = dynamic_cast<GetExpr*>(expr.get());
+            return SetExpr::create(std::move(get_expr->object), get_expr->name, std::move(value));
         }
         
         throw ParserError("Invalid assignment target.");
@@ -321,6 +350,9 @@ std::unique_ptr<Expr> Parser::call_() {
     while (true) {
         if (match_({TokenType::LEFT_PAREN})) {
             expr = finish_call_(std::move(expr));
+        } else if (match_({TokenType::DOT})) {
+            Token name = consume_(TokenType::IDENTIFIER, "Expect property name after '.'");
+            expr = GetExpr::create(std::move(expr), name);
         } else {
             break;
         }
@@ -367,6 +399,18 @@ std::unique_ptr<Expr> Parser::primary_() {
     
     if (match_({TokenType::STRING, TokenType::NUMBER})) {
         return LiteralExpr::create({previous_().literal});
+    }
+    
+    if (match_({TokenType::THIS})) {
+        return ThisExpr::create(previous_());
+    }
+    
+    if (match_({TokenType::SUPER})) {
+        Token keyword = previous_();
+        consume_(TokenType::DOT, "Expect '.' after 'super'.");
+        Token method = consume_(TokenType::IDENTIFIER, "Expect superclass method name.");
+        
+        return SuperExpr::create(keyword, method);
     }
     
     if (match_({TokenType::IDENTIFIER})) {

@@ -43,7 +43,8 @@ void run_file(const std::string& path) {
     std::string script;
     std::string str;
     while (std::getline(stream, str)) {
-        script += str;
+        // std::getline drops the \n, but we need it.
+        script += str + "\n";
     }
     
     run(script);
@@ -64,7 +65,9 @@ void run_prompt() {
                 run(script);
                 break;
             }
-            script += line;
+            // std::getline drops the \n, but we need it.
+            script += line + "\n";
+            
         }
     }
 }

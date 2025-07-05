@@ -65,7 +65,7 @@ void Scanner::scan_token_() {
             break;
         case '/':
             if (match_('/')) {
-                while (peek_() != '\n' && peek_() != '\r' && is_at_end_() == false) {
+                while (peek_() != '\n' && peek_() != '\r' && !is_at_end_()) {
                     advance_();
                 }
             } else if (match_('*')) {

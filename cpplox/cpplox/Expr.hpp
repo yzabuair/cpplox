@@ -16,6 +16,10 @@ struct UnaryExpr;
 struct VariableExpr;
 struct LogicalExpr;
 struct CallExpr;
+struct GetExpr;
+struct SetExpr;
+struct ThisExpr;
+struct SuperExpr;
 
 struct ExprVisitor {
     virtual void visit(const AssignExpr& expr) = 0;
@@ -26,6 +30,10 @@ struct ExprVisitor {
     virtual void visit(const VariableExpr& expr) = 0;
     virtual void visit(const LogicalExpr& expr) = 0;
     virtual void visit(const CallExpr& expr) = 0;
+    virtual void visit(const GetExpr& expr) = 0;
+    virtual void visit(const SetExpr& expr) = 0;
+    virtual void visit(const ThisExpr& expr) = 0;
+    virtual void visit(const SuperExpr& expr) = 0;
 };
 
 struct Expr {
@@ -202,7 +210,7 @@ struct LogicalExpr: public Expr {
 // ---
 
 struct CallExpr: public Expr {
-    std::unique_ptr<Expr>   callee;
+    std::unique_ptr<Expr> callee;
     Token closing_paren;
     std::vector<std::unique_ptr<Expr>> args;
     
@@ -224,8 +232,93 @@ struct CallExpr: public Expr {
     void accept(ExprVisitor& visitor) override {
         visitor.visit(*this);
     }
+};
+
+// ---
+
+struct GetExpr: public Expr {
+    std::unique_ptr<Expr> object;
+    Token name;
     
+    GetExpr(std::unique_ptr<Expr> object,
+            const Token& name):
+        object{std::move(object)},
+        name{name} {
+    }
     
+    static std::unique_ptr<GetExpr> create(std::unique_ptr<Expr> object,
+                                           const Token& name) {
+        return std::make_unique<GetExpr>(std::move(object), name);
+    }
+    
+    void accept(ExprVisitor& visitor) override {
+        visitor.visit(*this);
+    }
+};
+
+// ---
+
+struct SetExpr: public Expr {
+    std::unique_ptr<Expr> object;
+    Token name;
+    std::unique_ptr<Expr> value;
+    
+    SetExpr(std::unique_ptr<Expr> object,
+            const Token& name,
+            std::unique_ptr<Expr> value):
+        object{std::move(object)},
+        name{name},
+        value{std::move(value)} {
+    }
+    
+    static std::unique_ptr<SetExpr> create(std::unique_ptr<Expr> object,
+                                           const Token& name,
+                                           std::unique_ptr<Expr> value) {
+        return std::make_unique<SetExpr>(std::move(object), name, std::move(value));
+    }
+    
+    void accept(ExprVisitor& visitor) override {
+        visitor.visit(*this);
+    }
+};
+
+// ---
+
+struct ThisExpr: public Expr {
+    Token keyword;
+    
+    ThisExpr(const Token& keyword): keyword{keyword} {
+    }
+    
+    static std::unique_ptr<ThisExpr> create(const Token& keyword) {
+        return std::make_unique<ThisExpr>(keyword);
+    }
+    
+    void accept(ExprVisitor& visitor) override {
+        visitor.visit(*this);
+    }
+};
+
+// ---
+
+struct SuperExpr: public Expr {
+    Token keyword;
+    Token method;
+    
+    SuperExpr(const Token& keyword,
+              const Token& method):
+        keyword{keyword},
+        method{method} {
+    }
+    
+    static std::unique_ptr<SuperExpr> create(const Token& keyword,
+                                             const Token& method) {
+        return std::make_unique<SuperExpr>(keyword, method);
+    }
+   
+    void accept(ExprVisitor& visitor) override {
+        visitor.visit(*this);
+    }
 };
 
 } // namespace cpplox

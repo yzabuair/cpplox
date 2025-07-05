@@ -29,6 +29,7 @@ private:
     std::unique_ptr<Stmt> while_statement_();
     std::unique_ptr<Stmt> expression_statement_();
     std::unique_ptr<Stmt> function_decl_statement_(const std::string& kind);
+    std::unique_ptr<Stmt> class_decl_statement_();
     std::vector<std::unique_ptr<Stmt>> block_();
     std::unique_ptr<Expr> expression_();
     std::unique_ptr<Expr> assignment_();

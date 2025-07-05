@@ -17,6 +17,7 @@ struct IfStatement;
 struct WhileStatement;
 struct FunctionDeclStatementProxy;
 struct ReturnStatement;
+struct ClassDeclStatement;
 
 struct StmtVisitor {
     virtual void visit(const PrintStatement& stmt) = 0;
@@ -27,7 +28,7 @@ struct StmtVisitor {
     virtual void visit(const WhileStatement& stmt) = 0;
     virtual void visit(const FunctionDeclStatementProxy& stmt_proxy) = 0;
     virtual void visit(const ReturnStatement& stmt) = 0;
-    
+    virtual void visit(const ClassDeclStatement& stmt) = 0;
 };
 
 struct Stmt {
@@ -218,6 +219,32 @@ struct ReturnStatement: public Stmt {
     static std::unique_ptr<ReturnStatement> create(const Token& keyword,
                                                    std::unique_ptr<Expr> value) {
         return std::make_unique<ReturnStatement>(keyword, std::move(value));
+    }
+    
+    void accept(StmtVisitor& visitor) override {
+        visitor.visit(*this);
+    }
+};
+
+// ---
+
+struct ClassDeclStatement: public Stmt {
+    Token name;
+    std::unique_ptr<VariableExpr> super_class;
+    std::vector<std::shared_ptr<FunctionDeclStatement>> methods;
+    
+    ClassDeclStatement(const Token& name,
+                       std::unique_ptr<VariableExpr> super_class,
+                       std::vector<std::shared_ptr<FunctionDeclStatement>> methods):
+        name{name},
+        super_class{std::move(super_class)},
+        methods{std::move(methods)} {
+    }
+    
+    static std::unique_ptr<ClassDeclStatement> create(const Token& name,
+                                                      std::unique_ptr<VariableExpr> super_class,
+                                                      std::vector<std::shared_ptr<FunctionDeclStatement>> methods) {
+        return std::make_unique<ClassDeclStatement>(name, std::move(super_class), std::move(methods));
     }
     
     void accept(StmtVisitor& visitor) override {

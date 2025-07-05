@@ -18,11 +18,24 @@ class Resolver: public ExprVisitor,
 private:
     enum class FunctionType {
         None,
-        Function
+        Function,
+        Method
     };
+                    
+    enum class ClassType {
+        None,
+        Class
+    };
+                    
     Interpreter& interpreter_;
+                    
+    struct VarInfo {
+        std::string name;
+        bool used = false;
+    };
     std::deque<std::map<std::string, bool>> scopes_;
     FunctionType current_func = FunctionType::None;
+    ClassType current_class_ = ClassType::None;
                     
 public:
     Resolver(Interpreter& interpreter):
@@ -41,7 +54,10 @@ public:
     void visit(const VariableExpr& expr) override;
     void visit(const LogicalExpr& expr) override;
     void visit(const CallExpr& expr) override;
-                    
+    void visit(const GetExpr& expr) override;
+    void visit(const SetExpr& expr) override;
+    void visit(const ThisExpr& expr) override;
+    
 // StmtVisitor Implementation
 public:
     void visit(const PrintStatement& stmt) override;
@@ -52,12 +68,13 @@ public:
     void visit(const WhileStatement& stmt) override;
     void visit(const FunctionDeclStatementProxy& stmt_proxy) override;
     void visit(const ReturnStatement& stmt) override;
+    void visit(const ClassDeclStatement& stmt) override;
                     
 // Internal Helpers
 private:
     void begin_scope_();
-    void resolve_(const std::unique_ptr<Stmt>& stmt);
-    void resolve_(const std::unique_ptr<Expr>& expr);
+    void resolve_(Stmt& stmt);
+    void resolve_(Expr& expr);
     void end_scope_();
     void declare_(const Token& name);
     void define_(const Token& name);

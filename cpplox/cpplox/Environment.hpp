@@ -19,6 +19,13 @@ public:
     Environment(Environment* parent): parent_{parent} {
     }
     
+    Environment() {
+        
+    }
+    
+    void set_parent(Environment* parent) {
+        parent_ = parent;
+    }
     void define(const std::string& name, const ValueType& value);
     const ValueType& get(const Token& name) const;
     const ValueType& get_at(int distance, const Token& name);

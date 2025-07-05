@@ -1,6 +1,8 @@
 // Copyright 2025, Yasser Zabuair.  See LICENSE for details.
 #include "Interpreter.hpp"
 
+#include "LoxClass.hpp"
+#include "LoxInstance.hpp"
 #include "RuntimeError.hpp"
 
 #include <chrono>
@@ -42,7 +44,6 @@ void Interpreter::resolve(uintptr_t expr_ptr, int depth) {
 void Interpreter::visit(const AssignExpr& expr) {
     evaluate_(*(expr.value.get()));
     auto rhs = value;
-    //curr_env_->assign(expr.name, rhs);
     
     auto itr = locals_.find(reinterpret_cast<uintptr_t>(&expr));
     if (itr == locals_.end()) {
@@ -172,13 +173,18 @@ void Interpreter::visit(const LogicalExpr& expr) {
 }
 
 void Interpreter::visit(const CallExpr& expr) {
-    evaluate_(*(expr.callee.get()));
+    evaluate_(*(expr.callee));
     auto callee = value;
     
     if (callee.index() != 5) {
-        std::stringstream stream;
-        stream << "This is not a callable object at line: " << expr.closing_paren.line;
-        throw RuntimeError(stream.str());
+        //
+        // If we are not Callable and we're not a LoxClass, nothing we can do with this.
+        //
+        if (callee.index() != 7) {
+            std::stringstream stream;
+            stream << "This is not a callable object at line: " << expr.closing_paren.line;
+            throw RuntimeError(stream.str());
+        }
     }
     
     std::vector<std::any> args;
@@ -187,13 +193,55 @@ void Interpreter::visit(const CallExpr& expr) {
         args.push_back(std::move(value));
     }
     
-    Callable function_info = std::get<Callable>(callee);
-    if (args.size() != function_info.arity) {
-        throw RuntimeError("Wrong number of args");
+    if (callee.index() == 5) {
+        Callable function_info = std::get<Callable>(callee);
+        if (args.size() != function_info.arity) {
+            throw RuntimeError("Wrong number of args");
+        }
+        
+        auto result = function_info.func(args);
+        value = std::any_cast<ValueType>(result);
+    } else {
+        std::shared_ptr<LoxClass> lox_class = std::get<std::shared_ptr<LoxClass>>(callee);
+        if (lox_class->initializer.arity != args.size()) {
+            throw RuntimeError("Wrong number of args for initializer");
+        }
+        
+        auto result = lox_class->initializer.func(args);
+        value = std::any_cast<ValueType>(result);
+    }
+}
+
+void Interpreter::visit(const GetExpr& expr) {
+    evaluate_(*(expr.object.get()));
+    ValueType object = value;
+    
+    if (object.index() != 6) {
+        throw RuntimeError("Only object instances have properties.");
     }
     
-    auto result = function_info.func(args);
-    value = std::any_cast<ValueType>(result);
+    auto instance = std::get<std::shared_ptr<LoxInstance>>(object);
+    value = instance->get(expr.name);
+}
+
+void Interpreter::visit(const SetExpr& expr) {
+    evaluate_(*(expr.object.get()));
+    ValueType object = value;
+    
+    if (object.index() != 6) {
+        throw RuntimeError("Only object instances have properties.");
+    }
+    
+    evaluate_(*(expr.value.get()));
+    auto the_value = value;
+    
+    auto instance = std::get<std::shared_ptr<LoxInstance>>(object);
+    instance->set(expr.name, the_value);
+    
+}
+
+void Interpreter::visit(const ThisExpr& expr) {
+    value = lookup_variable_(expr.keyword, reinterpret_cast<uintptr_t>(&expr));
 }
 
 void Interpreter::evaluate_(Expr& expr) {
@@ -289,33 +337,7 @@ void Interpreter::visit(const WhileStatement& stmt) {
 }
 
 void Interpreter::visit(const FunctionDeclStatementProxy& stmt_proxy) {
-    Callable callable;
-    
-    
-    callable.arity = stmt_proxy.stmt->params.size();
-    
-    callable.func = [this, stmt = stmt_proxy.stmt](const std::vector<std::any>& params) -> std::any {
-        Environment env{curr_env_};
-        for(int i = 0; i < params.size(); ++i) {
-            env.define(stmt->params[i].lexeme, std::any_cast<ValueType>(params[i]));
-        }
-        
-        return_called_ = false;
-        value = std::monostate();
-        
-        execute_block_(stmt->body, env);
-        
-        // If the function just ends with no return, the result is nil.
-        if (!return_called_) {
-            value = std::monostate();
-        }
-        
-        return_called_ = false;
-        
-        return value;
-    };
-    
-    curr_env_->define(stmt_proxy.stmt->name.lexeme, callable);
+    curr_env_->define(stmt_proxy.stmt->name.lexeme, make_func_callable_(stmt_proxy.stmt));
 }
 
 void Interpreter::visit(const ReturnStatement& stmt) {
@@ -326,6 +348,62 @@ void Interpreter::visit(const ReturnStatement& stmt) {
     }
     
     return_called_ = true;
+}
+
+void Interpreter::visit(const ClassDeclStatement& stmt) {
+    curr_env_->define(stmt.name.lexeme, nullptr);
+    
+    //
+    // Handle super class if one is defined.
+    //
+    std::shared_ptr<LoxClass> super_class;
+    if (stmt.super_class) {
+        evaluate_(*(stmt.super_class));
+        auto evaulated_super_class = value;
+        
+        if (evaulated_super_class.index() != 7) {
+            throw RuntimeError("The superclass is not a class.");
+        } else {
+            super_class = std::get<std::shared_ptr<LoxClass>>(evaulated_super_class);
+        }
+    }
+    
+    //
+    // Sets up the methods in the class.
+    //
+    auto lox_instance = LoxInstance::create();
+    
+    std::map<std::string, ValueType> methods;
+    std::shared_ptr<FunctionDeclStatement> init_method;
+    for(const auto& curr: stmt.methods) {
+        methods[curr->name.lexeme] = make_func_callable_(curr, lox_instance);
+        if (curr->name.lexeme == "init") {
+            init_method = curr;
+        }
+    }
+    
+    auto lox_class = LoxClass::create(stmt.name.lexeme, methods, super_class);
+    lox_instance->lox_class = lox_class;
+    
+    //
+    // Sets up initializer that will create class instance and initialize.
+    //
+    Callable init_call;
+    if (init_method) {
+        init_call =  make_func_callable_(init_method, lox_instance);
+    } else {
+        init_call.arity = 0;
+        init_call.func = [this, lox_instance](const std::vector<std::any>& params) -> std::any {
+            Environment env{curr_env_};
+            
+            ValueType instance =  lox_instance;
+            return instance;
+        };
+    }
+    
+    lox_class->initializer = std::move(init_call);
+    
+    curr_env_->assign(stmt.name, lox_class);
 }
 
 bool Interpreter::is_thruthy_(const ValueType& value) {
@@ -395,11 +473,57 @@ void Interpreter::stringify_() {
             std::cout << std::get<Callable>(value) << "\n";
             break;
             
+        case 6:
+            std::cout << std::get<std::shared_ptr<LoxInstance>>(value)->lox_class->name << "\n";
+            break;
+            
         default:
             std::print("Unknown value type\n");
             break;
     }
 
+}
+
+Callable Interpreter::make_func_callable_(const std::shared_ptr<FunctionDeclStatement>& stmt,
+                                          const std::shared_ptr<LoxInstance>& instance) {
+    Callable callable;
+    callable.arity = static_cast<int>(stmt->params.size());
+    callable.func = [this, stmt, instance](const std::vector<std::any>& params) -> std::any {
+        Environment env;
+        Environment class_env{curr_env_};
+        
+        // If there is an instance, we are setting up a class method so setup environment properly.
+        if (instance) {
+            class_env.define("this", instance);
+            env.set_parent(&class_env);
+        } else {
+            env.set_parent(curr_env_);
+        }
+
+        for(int i = 0; i < params.size(); ++i) {
+            env.define(stmt->params[i].lexeme, std::any_cast<ValueType>(params[i]));
+        }
+
+        return_called_ = false;
+        value = std::monostate();
+
+        execute_block_(stmt->body, env);
+
+        if (stmt->name.lexeme == "init") {
+            if (return_called_) {
+                throw RuntimeError("Return makes no sense in an initializer.");
+            }
+            value = instance;
+        } else {
+            // If the function just ends with no return, the result is nil.
+            if (!return_called_) {
+                value = std::monostate();
+            }
+        }
+
+        return value;
+    };
+    return callable;
 }
 
 } // namespace cpplox

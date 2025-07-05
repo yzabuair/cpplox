@@ -7,18 +7,18 @@ namespace cpplox {
 
 void Resolver::resolve(const std::vector<std::unique_ptr<Stmt>>& stmts) {
     for(const auto& stmt: stmts) {
-        resolve_(stmt);
+        resolve_(*(stmt));
     }
 }
 
 void Resolver::visit(const AssignExpr& expr) {
-    resolve_(expr.value);
+    resolve_(*(expr.value));
     resolve_local_(expr, expr.name);
 }
 
 void Resolver::visit(const BinaryExpr& expr) {
-    resolve_(expr.left);
-    resolve_(expr.right);
+    resolve_(*(expr.left));
+    resolve_(*(expr.right));
 }
 
 void Resolver::visit(const LiteralExpr& expr) {
@@ -26,11 +26,11 @@ void Resolver::visit(const LiteralExpr& expr) {
 }
 
 void Resolver::visit(const GroupingExpr& expr) {
-    resolve_(expr.expression);
+    resolve_(*(expr.expression));
 }
 
 void Resolver::visit(const UnaryExpr& expr) {
-    resolve_(expr.right);
+    resolve_(*(expr.right));
 }
 
 void Resolver::visit(const VariableExpr& expr) {
@@ -47,30 +47,46 @@ void Resolver::visit(const VariableExpr& expr) {
 }
 
 void Resolver::visit(const LogicalExpr& expr) {
-    resolve_(expr.left);
-    resolve_(expr.right);
+    resolve_(*(expr.left));
+    resolve_(*(expr.right));
 }
 
 void Resolver::visit(const CallExpr& expr) {
-    resolve_(expr.callee);
+    resolve_(*(expr.callee));
     
     for(const auto& arg: expr.args) {
-        resolve_(arg);
+        resolve_(*(arg));
     }
 }
 
+void Resolver::visit(const GetExpr& expr) {
+    resolve_(*(expr.object));
+}
+
+void Resolver::visit(const SetExpr& expr) {
+    resolve_(*(expr.object));
+    resolve_(*(expr.value));
+}
+
+void Resolver::visit(const ThisExpr& expr) {
+    if (current_class_ != ClassType::Class) {
+        throw ParserError("Can not use 'this' outside of class.");
+    }
+    resolve_local_(expr, expr.keyword);
+}
+
 void Resolver::visit(const PrintStatement& stmt) {
-    resolve_(stmt.expression);
+    resolve_(*(stmt.expression));
 }
 
 void Resolver::visit(const ExpressionStatement& stmt) {
-    resolve_(stmt.expression);
+    resolve_(*(stmt.expression));
 }
 
 void Resolver::visit(const VariableDeclStatement& stmt) {
     declare_(stmt.name);
     if (stmt.initializer) {
-        resolve_(stmt.initializer);
+        resolve_(*(stmt.initializer));
     }
     
     define_(stmt.name);
@@ -83,16 +99,16 @@ void Resolver::visit(const BlockStatement& stmt) {
 }
 
 void Resolver::visit(const IfStatement& stmt) {
-    resolve_(stmt.condition);
-    resolve_(stmt.then_branch);
+    resolve_(*(stmt.condition));
+    resolve_(*(stmt.then_branch));
     if (stmt.else_branch) {
-        resolve_(stmt.else_branch);
+        resolve_(*(stmt.else_branch));
     }
 }
 
 void Resolver::visit(const WhileStatement& stmt) {
-    resolve_(stmt.condition);
-    resolve_(stmt.body);
+    resolve_(*(stmt.condition));
+    resolve_(*(stmt.body));
 }
 
 void Resolver::visit(const FunctionDeclStatementProxy& stmt_proxy) {
@@ -107,20 +123,49 @@ void Resolver::visit(const ReturnStatement& stmt) {
     }
     
     if (stmt.value) {
-        resolve_(stmt.value);
+        resolve_(*(stmt.value));
     }
+}
+
+void Resolver::visit(const ClassDeclStatement& stmt) {
+    auto enclosing_class = current_class_;
+    current_class_ = ClassType::Class;
+    
+    declare_(stmt.name);
+    define_(stmt.name);
+    if (stmt.super_class &&
+        stmt.super_class->name.lexeme == stmt.name.lexeme) {
+        throw ParserError("A class can not inherit from itself");
+    }
+    
+    if (stmt.super_class) {
+        resolve_(*(stmt.super_class));
+    }
+    
+    begin_scope_();
+    scopes_.front()["this"] = true;
+    
+    for(const auto& curr_method: stmt.methods) {
+        FunctionType declaration = FunctionType::Method;
+        
+        resolve_function_(*(curr_method.get()), declaration);
+    }
+    
+    end_scope_();
+    
+    current_class_ = enclosing_class;
 }
 
 void Resolver::begin_scope_() {
     scopes_.push_front(std::map<std::string, bool>{});
 }
 
-void Resolver::resolve_(const std::unique_ptr<Stmt>& stmt) {
-    stmt->accept(*this);
+void Resolver::resolve_(Stmt& stmt) {
+    stmt.accept(*this);
 }
 
-void Resolver::resolve_(const std::unique_ptr<Expr>& expr) {
-    expr->accept(*this);
+void Resolver::resolve_(Expr& expr) {
+    expr.accept(*this);
 }
 
 void Resolver::end_scope_() {
@@ -138,13 +183,6 @@ void Resolver::declare_(const Token& name) {
 void Resolver::define_(const Token& name) {
     if (scopes_.empty()) {
         return;
-    }
-    
-    const auto& curr_scope = scopes_.front();
-    if (curr_scope.find(name.lexeme) != curr_scope.end()) {
-        std::stringstream stream;
-        stream << "Variable " << name.lexeme << " is already defined.";
-        throw ParserError(stream.str());
     }
     
     scopes_.front()[name.lexeme] = true;
@@ -176,5 +214,6 @@ void Resolver::resolve_function_(const FunctionDeclStatement& stmt, const Functi
     
     current_func = enclosing_func;
 }
+
 
 } // namespace cpplox

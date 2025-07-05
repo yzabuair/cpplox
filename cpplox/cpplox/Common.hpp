@@ -10,6 +10,8 @@
 namespace cpplox {
 // Forwards.
 class Environment;
+struct LoxInstance;
+struct LoxClass;
 
 struct Callable {
     friend std::ostream& operator<<(std::ostream& stream, const Callable& callable);
@@ -22,7 +24,9 @@ inline std::ostream& operator<<(std::ostream& stream, const Callable& callable) 
     stream << "<native fn>";
     return stream;
 }
-using ValueType = std::variant<std::monostate, std::string, double, bool, nullptr_t, Callable>;
+using ValueType = std::variant<std::monostate, std::string, double, bool, nullptr_t, Callable, std::shared_ptr<LoxInstance>, std::shared_ptr<LoxClass>>;
+
+
 
 
 } // namespace cpplox
