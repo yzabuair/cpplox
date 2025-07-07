@@ -4,7 +4,7 @@
 
 namespace cpplox {
 
-
+/// The various types of tokens we support.
 enum class TokenType {
     UNDEFINED,
     

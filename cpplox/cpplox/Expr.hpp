@@ -5,6 +5,7 @@
 #include <memory>
 #include <vector>
 
+/// These are the expression objects used throughout the interpter.
 namespace cpplox {
 
 // Forward Declarations

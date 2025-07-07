@@ -75,6 +75,10 @@ void Resolver::visit(const ThisExpr& expr) {
     resolve_local_(expr, expr.keyword);
 }
 
+void Resolver::visit(const SuperExpr& expr) {
+    resolve_local_(expr, expr.keyword);
+}
+
 void Resolver::visit(const PrintStatement& stmt) {
     resolve_(*(stmt.expression));
 }
@@ -143,6 +147,9 @@ void Resolver::visit(const ClassDeclStatement& stmt) {
     }
     
     begin_scope_();
+    if (stmt.super_class) {
+        scopes_.front()["super"] = true;
+    }
     scopes_.front()["this"] = true;
     
     for(const auto& curr_method: stmt.methods) {

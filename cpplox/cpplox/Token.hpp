@@ -11,6 +11,7 @@ namespace cpplox {
 
 using TokenValueType = std::variant<std::monostate, std::string, double, bool, nullptr_t>;
 
+/// Represents a token we've scanned from the stream.
 struct Token {
     
 public:

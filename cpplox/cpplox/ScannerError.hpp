@@ -8,6 +8,7 @@
 
 namespace cpplox {
 
+/// Error we ran into during scanning.
 struct ScannerError: public std::exception {
     
 private:

@@ -10,6 +10,7 @@
 
 namespace cpplox {
 
+/// The execution environment of the script, will contain sub-environments for things such as functions and class methods.
 class Environment {
 private:
     std::map<std::string, ValueType> values_;
@@ -28,7 +29,7 @@ public:
     }
     void define(const std::string& name, const ValueType& value);
     const ValueType& get(const Token& name) const;
-    const ValueType& get_at(int distance, const Token& name);
+    const ValueType& get_at(int distance, const std::string& name);
     void assign(const Token& name, const ValueType& value);
     void assign_at(int distance,
                    const Token& name,

@@ -244,6 +244,17 @@ void Interpreter::visit(const ThisExpr& expr) {
     value = lookup_variable_(expr.keyword, reinterpret_cast<uintptr_t>(&expr));
 }
 
+void Interpreter::visit(const SuperExpr& expr) {
+    auto itr = locals_.find(reinterpret_cast<uintptr_t>(&expr));
+    if (itr == locals_.end()) {
+        throw RuntimeError("Could not find 'super' in environment.");
+    }
+    
+    auto super = curr_env_->get_at(itr->second, "super");
+    auto super_class = std::get<std::shared_ptr<LoxClass>>(super);
+    value = super_class->find_method(expr.method.lexeme);
+}
+
 void Interpreter::evaluate_(Expr& expr) {
     expr.accept(*this);
 }
@@ -257,7 +268,7 @@ ValueType Interpreter::lookup_variable_(const Token& name, uintptr_t expr_ptr) {
     if (itr == locals_.end()) {
         return global_env_.get(name);
     } else {
-        return curr_env_->get_at(itr->second, name);
+        return curr_env_->get_at(itr->second, name.lexeme);
     }
 }
 
@@ -376,7 +387,7 @@ void Interpreter::visit(const ClassDeclStatement& stmt) {
     std::map<std::string, ValueType> methods;
     std::shared_ptr<FunctionDeclStatement> init_method;
     for(const auto& curr: stmt.methods) {
-        methods[curr->name.lexeme] = make_func_callable_(curr, lox_instance);
+        methods[curr->name.lexeme] = make_func_callable_(curr, lox_instance, super_class);
         if (curr->name.lexeme == "init") {
             init_method = curr;
         }
@@ -485,16 +496,22 @@ void Interpreter::stringify_() {
 }
 
 Callable Interpreter::make_func_callable_(const std::shared_ptr<FunctionDeclStatement>& stmt,
-                                          const std::shared_ptr<LoxInstance>& instance) {
+                                          const std::shared_ptr<LoxInstance>& instance,
+                                          const std::shared_ptr<LoxClass>& super_class) {
     Callable callable;
     callable.arity = static_cast<int>(stmt->params.size());
-    callable.func = [this, stmt, instance](const std::vector<std::any>& params) -> std::any {
+    callable.func = [this, stmt, instance, super_class](const std::vector<std::any>& params) -> std::any {
         Environment env;
         Environment class_env{curr_env_};
         
+        //
         // If there is an instance, we are setting up a class method so setup environment properly.
+        //
         if (instance) {
             class_env.define("this", instance);
+            if (super_class) {
+                class_env.define("super", super_class);
+            }
             env.set_parent(&class_env);
         } else {
             env.set_parent(curr_env_);

@@ -8,6 +8,7 @@
 
 namespace cpplox {
 
+/// Error thrown when we run into an error.
 struct ParserError: public std::exception {
   
 private:

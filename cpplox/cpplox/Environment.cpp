@@ -24,8 +24,8 @@ const ValueType& Environment::get(const Token& name) const {
     return itr->second;
 }
 
-const ValueType& Environment::get_at(int distance, const Token& name) {
-    return ancestor_(distance).values_[name.lexeme];
+const ValueType& Environment::get_at(int distance, const std::string& name) {
+    return ancestor_(distance).values_[name];
 }
 
 void Environment::assign(const Token& name, const ValueType& value) {

@@ -11,6 +11,7 @@
 
 namespace cpplox {
 
+/// Parses tokens into AST nodes.
 struct Parser {
     std::vector<Token> tokens;
     int current = 0;

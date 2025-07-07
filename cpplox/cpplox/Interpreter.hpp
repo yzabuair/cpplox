@@ -17,6 +17,7 @@ namespace cpplox {
 // Forwards
 class LoxInstance;
 
+/// The interpreter that "executes" the AST nodes.
 class Interpreter: public ExprVisitor,
                    public StmtVisitor {
 private:
@@ -47,6 +48,7 @@ public:
     void visit(const GetExpr& expr) override;
     void visit(const SetExpr& expr) override;
     void visit(const ThisExpr& expr) override;
+    void visit(const SuperExpr& expr) override;
                        
 // StmtVisitor Implementation
 public:
@@ -71,7 +73,8 @@ private:
     bool is_equal_(const ValueType& a, const ValueType& b);
     void stringify_();
     Callable make_func_callable_(const std::shared_ptr<FunctionDeclStatement>& stmt,
-                                 const std::shared_ptr<LoxInstance>& instance = nullptr);
+                                 const std::shared_ptr<LoxInstance>& instance = nullptr,
+                                 const std::shared_ptr<LoxClass>& super_class = nullptr);
 };
 
 } // namespace cpplox

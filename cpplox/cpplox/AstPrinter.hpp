@@ -10,6 +10,7 @@
 
 namespace cpplox {
 
+/// Helper class that prints out the AST.
 struct AstPrinter: public ExprVisitor {
 public:
     std::string print(Expr& expr);

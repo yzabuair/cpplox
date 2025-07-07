@@ -1104,6 +1104,67 @@
 			<key>uniqueIdentifier</key>
 			<string>1713EDB9-7A44-47C7-B6A6-767B37CC0090</string>
 		</dict>
+		<key>17868F8A-BAB2-4C3B-A974-F030EA0C6B3B</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>6C2E9AA5-0C3B-4166-BA76-CF2F65EC226B</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-cpplox-2025.07.06_15-44-13--0400.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>cpplox project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>cpplox</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run cpplox</string>
+			<key>timeStartedRecording</key>
+			<real>773523853.36646104</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run cpplox</string>
+			<key>uniqueIdentifier</key>
+			<string>17868F8A-BAB2-4C3B-A974-F030EA0C6B3B</string>
+		</dict>
 		<key>17CF0D34-A5DF-49CB-BB07-0AAC52CCBABE</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
@@ -1775,6 +1836,67 @@
 			<key>uniqueIdentifier</key>
 			<string>2357E31E-141F-4DC1-AB26-0213C3F26566</string>
 		</dict>
+		<key>23703087-433D-44DE-A428-40E28FDFE3D5</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>DA3B7BC0-CC48-40A2-8E40-E121977493C4</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-cpplox-2025.07.06_21-36-11--0400.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>cpplox project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>cpplox</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run cpplox</string>
+			<key>timeStartedRecording</key>
+			<real>773544971.58550406</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run cpplox</string>
+			<key>uniqueIdentifier</key>
+			<string>23703087-433D-44DE-A428-40E28FDFE3D5</string>
+		</dict>
 		<key>257AE5B7-9605-47A4-9C7D-2E9719DAB61D</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
@@ -2323,6 +2445,67 @@
 			<string>Run cpplox</string>
 			<key>uniqueIdentifier</key>
 			<string>2B7F43DF-BC56-4A3F-B7E8-630889156F01</string>
+		</dict>
+		<key>2B836FB8-7305-48BE-B187-C09C45A08A5A</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>385A50F9-134D-4707-9E30-D915F6384907</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-cpplox-2025.07.06_15-52-10--0400.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>cpplox project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>cpplox</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run cpplox</string>
+			<key>timeStartedRecording</key>
+			<real>773524330.61326694</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run cpplox</string>
+			<key>uniqueIdentifier</key>
+			<string>2B836FB8-7305-48BE-B187-C09C45A08A5A</string>
 		</dict>
 		<key>2E105D32-19E9-4741-B6BE-90AC271579E7</key>
 		<dict>
@@ -3055,6 +3238,67 @@
 			<string>Run cpplox</string>
 			<key>uniqueIdentifier</key>
 			<string>400D37E3-4FF3-4A10-A66A-5E2E811DCD63</string>
+		</dict>
+		<key>40C9C9DB-619F-4CC6-927A-E68EFD985ECF</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>80EB8426-59E1-4590-B3D5-FCAFC5BFCCA8</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-cpplox-2025.07.06_20-35-29--0400.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>cpplox project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>cpplox</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run cpplox</string>
+			<key>timeStartedRecording</key>
+			<real>773541329.57105803</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run cpplox</string>
+			<key>uniqueIdentifier</key>
+			<string>40C9C9DB-619F-4CC6-927A-E68EFD985ECF</string>
 		</dict>
 		<key>419DD8AF-96D0-4B25-99D9-1E48576263AD</key>
 		<dict>
@@ -5130,6 +5374,67 @@
 			<key>uniqueIdentifier</key>
 			<string>6E9681D7-2EC2-4D90-922B-17A4EC3376DF</string>
 		</dict>
+		<key>6F4744A8-B9F6-47F8-AC6F-8E8362526066</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>E1A98B7A-0DFC-488F-AFCD-A65B155A23AF</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-cpplox-2025.07.06_20-36-42--0400.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>cpplox project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>cpplox</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run cpplox</string>
+			<key>timeStartedRecording</key>
+			<real>773541402.074628</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run cpplox</string>
+			<key>uniqueIdentifier</key>
+			<string>6F4744A8-B9F6-47F8-AC6F-8E8362526066</string>
+		</dict>
 		<key>7038CC4E-CEE6-4629-8B4D-3B5498749904</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
@@ -6045,6 +6350,67 @@
 			<key>uniqueIdentifier</key>
 			<string>7EFABE2F-D8F7-4BD2-8FC4-CA73B5F89B45</string>
 		</dict>
+		<key>823B3FC1-50EB-40BF-872E-C569BDDE0C41</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>A011909B-04AD-41DE-9712-9C92BA9CF968</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-cpplox-2025.07.06_21-38-24--0400.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>cpplox project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>cpplox</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run cpplox</string>
+			<key>timeStartedRecording</key>
+			<real>773545104.92155504</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run cpplox</string>
+			<key>uniqueIdentifier</key>
+			<string>823B3FC1-50EB-40BF-872E-C569BDDE0C41</string>
+		</dict>
 		<key>8324E863-092D-48C0-9AA6-287EE83EA12B</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
@@ -6532,6 +6898,67 @@
 			<string>Run cpplox</string>
 			<key>uniqueIdentifier</key>
 			<string>8C3993E2-5DA7-429F-B1B9-5BCDB768E605</string>
+		</dict>
+		<key>8CA67836-44A6-43B2-96DF-4762AC5AACB6</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>6427097A-237C-4808-8009-33C1117C74D5</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-cpplox-2025.07.06_15-41-31--0400.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>cpplox project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>cpplox</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run cpplox</string>
+			<key>timeStartedRecording</key>
+			<real>773523691.31034195</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run cpplox</string>
+			<key>uniqueIdentifier</key>
+			<string>8CA67836-44A6-43B2-96DF-4762AC5AACB6</string>
 		</dict>
 		<key>8E02016B-89EF-4C73-ADF1-0056BAFB0EE2</key>
 		<dict>
@@ -7021,6 +7448,67 @@
 			<key>uniqueIdentifier</key>
 			<string>964F0C4E-8F8A-4060-9477-02B7BB8E38C3</string>
 		</dict>
+		<key>9962AE23-5882-4D76-B67D-5229224F40F3</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>78CE3E97-3F5F-415B-B55A-58C694EF10E3</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-cpplox-2025.07.06_15-43-48--0400.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>cpplox project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>cpplox</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run cpplox</string>
+			<key>timeStartedRecording</key>
+			<real>773523828.59045005</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run cpplox</string>
+			<key>uniqueIdentifier</key>
+			<string>9962AE23-5882-4D76-B67D-5229224F40F3</string>
+		</dict>
 		<key>9BDACFA4-C0B3-40BC-9839-818A6C7152E2</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
@@ -7447,6 +7935,67 @@
 			<string>Run cpplox</string>
 			<key>uniqueIdentifier</key>
 			<string>9F32B77D-A44C-469D-8013-49CF3DA4B499</string>
+		</dict>
+		<key>9F4D0071-92B7-469A-9886-6B767F53DA46</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>7FE31663-B90F-425F-906A-A8D58ADABD49</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-cpplox-2025.07.06_21-43-27--0400.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>cpplox project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>cpplox</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run cpplox</string>
+			<key>timeStartedRecording</key>
+			<real>773545407.35144699</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run cpplox</string>
+			<key>uniqueIdentifier</key>
+			<string>9F4D0071-92B7-469A-9886-6B767F53DA46</string>
 		</dict>
 		<key>A26FE6F2-9ED7-4F3E-AC9D-863B0C268AD3</key>
 		<dict>
@@ -8241,6 +8790,67 @@
 			<key>uniqueIdentifier</key>
 			<string>B471CA9A-5E28-48EB-8026-2185B41E8D1E</string>
 		</dict>
+		<key>B52C12F4-285C-480D-8282-0A16D493E184</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>41E9FD10-E479-453A-A0E8-07A2F7FDD2B7</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-cpplox-2025.07.07_12-57-55--0400.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>cpplox project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>cpplox</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run cpplox</string>
+			<key>timeStartedRecording</key>
+			<real>773600275.40553606</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run cpplox</string>
+			<key>uniqueIdentifier</key>
+			<string>B52C12F4-285C-480D-8282-0A16D493E184</string>
+		</dict>
 		<key>B817AFDF-C544-46A6-A0BA-4ECBE21033B6</key>
 		<dict>
 			<key>auxiliaryLogUniqueIdentifier</key>
@@ -8301,6 +8911,67 @@
 			<string>Run cpplox</string>
 			<key>uniqueIdentifier</key>
 			<string>B817AFDF-C544-46A6-A0BA-4ECBE21033B6</string>
+		</dict>
+		<key>B85F23CB-C970-40F3-A429-91815214C573</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>F3855EE4-69ED-445D-99BD-C46472F44E8F</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-cpplox-2025.07.06_21-42-56--0400.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>cpplox project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>cpplox</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run cpplox</string>
+			<key>timeStartedRecording</key>
+			<real>773545376.05458796</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run cpplox</string>
+			<key>uniqueIdentifier</key>
+			<string>B85F23CB-C970-40F3-A429-91815214C573</string>
 		</dict>
 		<key>B99D5262-E207-442C-A03C-3BC48E673C3D</key>
 		<dict>
@@ -9277,6 +9948,67 @@
 			<string>Run cpplox</string>
 			<key>uniqueIdentifier</key>
 			<string>CBB89C8B-C551-4A07-88E7-0B29D16466DE</string>
+		</dict>
+		<key>CC499E1E-A97A-4E0B-8F22-CC6B208731B6</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>0676325D-EC29-429D-8DF4-4520952273FF</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-cpplox-2025.07.06_21-35-50--0400.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>cpplox project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>cpplox</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run cpplox</string>
+			<key>timeStartedRecording</key>
+			<real>773544950.94174194</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run cpplox</string>
+			<key>uniqueIdentifier</key>
+			<string>CC499E1E-A97A-4E0B-8F22-CC6B208731B6</string>
 		</dict>
 		<key>CD7ABA87-230E-4AD0-A27E-22AE725CE5D8</key>
 		<dict>
@@ -10741,6 +11473,67 @@
 			<string>Run cpplox</string>
 			<key>uniqueIdentifier</key>
 			<string>EB0BCB34-4E04-499D-A46F-B8909194D930</string>
+		</dict>
+		<key>EC828015-636A-4AA3-8D5D-8BDD1531D401</key>
+		<dict>
+			<key>auxiliaryLogUniqueIdentifier</key>
+			<string>0E69C374-C307-4829-AA4C-8120108B62C6</string>
+			<key>auxiliaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>className</key>
+			<string>IDESchemeActionsInvocationRecord</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>com.apple.dt.IDE.LaunchSchemeAction</string>
+			<key>fileName</key>
+			<string>Run-cpplox-2025.07.06_21-45-19--0400.xcresult</string>
+			<key>hasAuxiliaryLog</key>
+			<true/>
+			<key>hasConsoleLog</key>
+			<true/>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>cpplox project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>cpplox</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run cpplox</string>
+			<key>timeStartedRecording</key>
+			<real>773545519.96298802</real>
+			<key>timeStoppedRecording</key>
+			<real>0.0</real>
+			<key>title</key>
+			<string>Run cpplox</string>
+			<key>uniqueIdentifier</key>
+			<string>EC828015-636A-4AA3-8D5D-8BDD1531D401</string>
 		</dict>
 		<key>F26E07D0-19A7-4FA5-A981-BFCECE6D51AD</key>
 		<dict>

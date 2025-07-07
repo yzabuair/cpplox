@@ -13,6 +13,7 @@ namespace cpplox {
 // Forwards
 class LoxClass;
 
+/// An instance of a Lox class.  Primarily this is where the state lives.
 struct LoxInstance {
     std::shared_ptr<LoxClass> lox_class;
     std::map<std::string, ValueType> fields;

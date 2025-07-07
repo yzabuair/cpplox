@@ -7,6 +7,7 @@
 
 namespace cpplox {
 
+/// Errors that occur when script is running.
 struct RuntimeError: public std::exception {
     
 private:

@@ -9,6 +9,7 @@
 
 namespace cpplox {
 
+/// Represents a class in lox, which is primarily a containter for the methods and creates new instances.
 struct LoxClass {
     std::string name;
     std::map<std::string, ValueType> methods;

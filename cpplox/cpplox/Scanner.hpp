@@ -10,9 +10,7 @@
 
 namespace cpplox {
 
-/**
- * Used to break-up the stream into tokens that we use for parsing.
- */
+/// Used to break-up the stream into tokens that we use for parsing.
 class Scanner {
 private:
     std::string source_;

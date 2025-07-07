@@ -12,6 +12,7 @@
 
 namespace cpplox {
 
+/// Resolves which environment to use for a variable, and various ther checks on the script.
 class Resolver: public ExprVisitor,
                 public StmtVisitor {
                     
@@ -57,6 +58,7 @@ public:
     void visit(const GetExpr& expr) override;
     void visit(const SetExpr& expr) override;
     void visit(const ThisExpr& expr) override;
+    void visit(const SuperExpr& expr) override;
     
 // StmtVisitor Implementation
 public:

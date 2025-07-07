@@ -552,6 +552,48 @@
 			<key>uniqueIdentifier</key>
 			<string>05AE925E-77CD-4FA3-899A-6B973E3B3C67</string>
 		</dict>
+		<key>0676325D-EC29-429D-8DF4-4520952273FF</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>0676325D-EC29-429D-8DF4-4520952273FF.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>cpplox project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>cpplox</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build cpplox</string>
+			<key>timeStartedRecording</key>
+			<real>773544950.94202995</real>
+			<key>timeStoppedRecording</key>
+			<real>773544951.09088504</real>
+			<key>title</key>
+			<string>Build cpplox</string>
+			<key>uniqueIdentifier</key>
+			<string>0676325D-EC29-429D-8DF4-4520952273FF</string>
+		</dict>
 		<key>06A3D1D5-5390-4E3E-BEB5-F49687F86C3F</key>
 		<dict>
 			<key>className</key>
@@ -1181,6 +1223,48 @@
 			<string>Build cpplox</string>
 			<key>uniqueIdentifier</key>
 			<string>0E35DF67-3BA6-4B1A-A4C9-5EB582C098ED</string>
+		</dict>
+		<key>0E69C374-C307-4829-AA4C-8120108B62C6</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>0E69C374-C307-4829-AA4C-8120108B62C6.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>cpplox project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>cpplox</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build cpplox</string>
+			<key>timeStartedRecording</key>
+			<real>773545519.96328902</real>
+			<key>timeStoppedRecording</key>
+			<real>773545520.03473794</real>
+			<key>title</key>
+			<string>Build cpplox</string>
+			<key>uniqueIdentifier</key>
+			<string>0E69C374-C307-4829-AA4C-8120108B62C6</string>
 		</dict>
 		<key>0EBBBB7B-013D-4ECC-9342-1C1BE912A180</key>
 		<dict>
@@ -4626,6 +4710,48 @@
 			<key>uniqueIdentifier</key>
 			<string>38300E12-D455-4BC7-BEE6-2BE210231436</string>
 		</dict>
+		<key>385A50F9-134D-4707-9E30-D915F6384907</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>385A50F9-134D-4707-9E30-D915F6384907.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>cpplox project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>cpplox</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build cpplox</string>
+			<key>timeStartedRecording</key>
+			<real>773524330.613469</real>
+			<key>timeStoppedRecording</key>
+			<real>773524330.685063</real>
+			<key>title</key>
+			<string>Build cpplox</string>
+			<key>uniqueIdentifier</key>
+			<string>385A50F9-134D-4707-9E30-D915F6384907</string>
+		</dict>
 		<key>38EA46F9-9200-4E45-9025-F9CEA0D4FB53</key>
 		<dict>
 			<key>className</key>
@@ -5172,6 +5298,48 @@
 			<key>uniqueIdentifier</key>
 			<string>416DE537-7B70-4363-A6B9-67C3C4A921E5</string>
 		</dict>
+		<key>41E9FD10-E479-453A-A0E8-07A2F7FDD2B7</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>41E9FD10-E479-453A-A0E8-07A2F7FDD2B7.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>cpplox project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>cpplox</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build cpplox</string>
+			<key>timeStartedRecording</key>
+			<real>773600275.40577495</real>
+			<key>timeStoppedRecording</key>
+			<real>773600275.65172303</real>
+			<key>title</key>
+			<string>Build cpplox</string>
+			<key>uniqueIdentifier</key>
+			<string>41E9FD10-E479-453A-A0E8-07A2F7FDD2B7</string>
+		</dict>
 		<key>420C7538-985B-4021-B258-C80618276577</key>
 		<dict>
 			<key>className</key>
@@ -5255,6 +5423,48 @@
 			<string>Build cpplox</string>
 			<key>uniqueIdentifier</key>
 			<string>42831E34-436E-45B0-9A17-E43E1468F3E9</string>
+		</dict>
+		<key>4297AB89-A0DE-44D4-A9A6-B609279F5625</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>4297AB89-A0DE-44D4-A9A6-B609279F5625.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>1</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>cpplox project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>cpplox</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build cpplox</string>
+			<key>timeStartedRecording</key>
+			<real>773523310.43793094</real>
+			<key>timeStoppedRecording</key>
+			<real>773523311.58006895</real>
+			<key>title</key>
+			<string>Build cpplox</string>
+			<key>uniqueIdentifier</key>
+			<string>4297AB89-A0DE-44D4-A9A6-B609279F5625</string>
 		</dict>
 		<key>42C9B653-9D6B-46AC-8EDA-1EDD4FDF0C89</key>
 		<dict>
@@ -6642,6 +6852,48 @@
 			<key>uniqueIdentifier</key>
 			<string>58B95B7E-2A27-459F-8AF8-53BBC7531361</string>
 		</dict>
+		<key>592435B6-2D6F-4F7E-94A9-A3E0399E76C4</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>592435B6-2D6F-4F7E-94A9-A3E0399E76C4.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>cpplox project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>cpplox</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build cpplox</string>
+			<key>timeStartedRecording</key>
+			<real>773545516.36821306</real>
+			<key>timeStoppedRecording</key>
+			<real>773545517.57113194</real>
+			<key>title</key>
+			<string>Build cpplox</string>
+			<key>uniqueIdentifier</key>
+			<string>592435B6-2D6F-4F7E-94A9-A3E0399E76C4</string>
+		</dict>
 		<key>595478E0-9D79-4354-A911-38A5589A7267</key>
 		<dict>
 			<key>className</key>
@@ -7482,6 +7734,48 @@
 			<key>uniqueIdentifier</key>
 			<string>635DFF47-886E-4229-B3CB-1998AAE5CB51</string>
 		</dict>
+		<key>6427097A-237C-4808-8009-33C1117C74D5</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>6427097A-237C-4808-8009-33C1117C74D5.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>cpplox project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>cpplox</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build cpplox</string>
+			<key>timeStartedRecording</key>
+			<real>773523691.31062198</real>
+			<key>timeStoppedRecording</key>
+			<real>773523691.54204094</real>
+			<key>title</key>
+			<string>Build cpplox</string>
+			<key>uniqueIdentifier</key>
+			<string>6427097A-237C-4808-8009-33C1117C74D5</string>
+		</dict>
 		<key>66D0940A-37BE-4E1B-B33D-E5D728251A72</key>
 		<dict>
 			<key>className</key>
@@ -7901,6 +8195,48 @@
 			<string>Build cpplox</string>
 			<key>uniqueIdentifier</key>
 			<string>6BDC139D-20D3-42F5-8050-5CC389A0FAFE</string>
+		</dict>
+		<key>6C2E9AA5-0C3B-4166-BA76-CF2F65EC226B</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>6C2E9AA5-0C3B-4166-BA76-CF2F65EC226B.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>cpplox project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>cpplox</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build cpplox</string>
+			<key>timeStartedRecording</key>
+			<real>773523853.36667299</real>
+			<key>timeStoppedRecording</key>
+			<real>773523853.43028998</real>
+			<key>title</key>
+			<string>Build cpplox</string>
+			<key>uniqueIdentifier</key>
+			<string>6C2E9AA5-0C3B-4166-BA76-CF2F65EC226B</string>
 		</dict>
 		<key>6D08E8E3-7F14-45C6-BF89-F42EF216B8B4</key>
 		<dict>
@@ -8573,6 +8909,48 @@
 			<string>Build cpplox</string>
 			<key>uniqueIdentifier</key>
 			<string>78C9E546-CF45-4020-ACD7-0952AFC1305B</string>
+		</dict>
+		<key>78CE3E97-3F5F-415B-B55A-58C694EF10E3</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>78CE3E97-3F5F-415B-B55A-58C694EF10E3.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>cpplox project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>cpplox</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build cpplox</string>
+			<key>timeStartedRecording</key>
+			<real>773523828.59066105</real>
+			<key>timeStoppedRecording</key>
+			<real>773523828.69071901</real>
+			<key>title</key>
+			<string>Build cpplox</string>
+			<key>uniqueIdentifier</key>
+			<string>78CE3E97-3F5F-415B-B55A-58C694EF10E3</string>
 		</dict>
 		<key>78CFCBC2-E534-4F85-8BD4-D10DF95474B8</key>
 		<dict>
@@ -9582,6 +9960,48 @@
 			<key>uniqueIdentifier</key>
 			<string>7FCFA46A-A9F4-488F-89F2-66F3027B17B3</string>
 		</dict>
+		<key>7FE31663-B90F-425F-906A-A8D58ADABD49</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>7FE31663-B90F-425F-906A-A8D58ADABD49.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>cpplox project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>cpplox</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build cpplox</string>
+			<key>timeStartedRecording</key>
+			<real>773545407.35167003</real>
+			<key>timeStoppedRecording</key>
+			<real>773545407.55578697</real>
+			<key>title</key>
+			<string>Build cpplox</string>
+			<key>uniqueIdentifier</key>
+			<string>7FE31663-B90F-425F-906A-A8D58ADABD49</string>
+		</dict>
 		<key>80545255-1A1B-425F-AF0B-AE8EC3BB00D8</key>
 		<dict>
 			<key>className</key>
@@ -9707,6 +10127,48 @@
 			<string>Build cpplox</string>
 			<key>uniqueIdentifier</key>
 			<string>8098286F-838D-47C0-A10A-21D8B1A0A3A6</string>
+		</dict>
+		<key>80EB8426-59E1-4590-B3D5-FCAFC5BFCCA8</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>80EB8426-59E1-4590-B3D5-FCAFC5BFCCA8.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>cpplox project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>cpplox</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build cpplox</string>
+			<key>timeStartedRecording</key>
+			<real>773541329.57121599</real>
+			<key>timeStoppedRecording</key>
+			<real>773541329.80090594</real>
+			<key>title</key>
+			<string>Build cpplox</string>
+			<key>uniqueIdentifier</key>
+			<string>80EB8426-59E1-4590-B3D5-FCAFC5BFCCA8</string>
 		</dict>
 		<key>811BAD63-3DFF-4047-A253-05A1633D4033</key>
 		<dict>
@@ -11471,6 +11933,48 @@
 			<string>Build cpplox</string>
 			<key>uniqueIdentifier</key>
 			<string>9F1B2FFA-02EE-4A17-838A-0B122C36678E</string>
+		</dict>
+		<key>A011909B-04AD-41DE-9712-9C92BA9CF968</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>A011909B-04AD-41DE-9712-9C92BA9CF968.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>cpplox project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>cpplox</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build cpplox</string>
+			<key>timeStartedRecording</key>
+			<real>773545104.92179501</real>
+			<key>timeStoppedRecording</key>
+			<real>773545104.99721801</real>
+			<key>title</key>
+			<string>Build cpplox</string>
+			<key>uniqueIdentifier</key>
+			<string>A011909B-04AD-41DE-9712-9C92BA9CF968</string>
 		</dict>
 		<key>A0184A61-8A4A-435A-A8DC-93F5FD8511BD</key>
 		<dict>
@@ -15420,6 +15924,48 @@
 			<key>uniqueIdentifier</key>
 			<string>D91D9530-F652-4A73-A2BC-F41560502E7C</string>
 		</dict>
+		<key>DA3B7BC0-CC48-40A2-8E40-E121977493C4</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>DA3B7BC0-CC48-40A2-8E40-E121977493C4.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>cpplox project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>cpplox</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build cpplox</string>
+			<key>timeStartedRecording</key>
+			<real>773544971.58567595</real>
+			<key>timeStoppedRecording</key>
+			<real>773544971.64803696</real>
+			<key>title</key>
+			<string>Build cpplox</string>
+			<key>uniqueIdentifier</key>
+			<string>DA3B7BC0-CC48-40A2-8E40-E121977493C4</string>
+		</dict>
 		<key>DB00EDF6-7DC9-46CF-9746-5F3FFE17D126</key>
 		<dict>
 			<key>className</key>
@@ -15839,6 +16385,48 @@
 			<string>Build cpplox</string>
 			<key>uniqueIdentifier</key>
 			<string>E17E3425-D4E0-4C7F-B9DD-20C2822C6082</string>
+		</dict>
+		<key>E1A98B7A-0DFC-488F-AFCD-A65B155A23AF</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>E1A98B7A-0DFC-488F-AFCD-A65B155A23AF.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>cpplox project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>cpplox</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build cpplox</string>
+			<key>timeStartedRecording</key>
+			<real>773541402.074826</real>
+			<key>timeStoppedRecording</key>
+			<real>773541402.14124703</real>
+			<key>title</key>
+			<string>Build cpplox</string>
+			<key>uniqueIdentifier</key>
+			<string>E1A98B7A-0DFC-488F-AFCD-A65B155A23AF</string>
 		</dict>
 		<key>E1DE75E7-E4EA-4B23-B3AA-EDF57CF421E3</key>
 		<dict>
@@ -16890,6 +17478,90 @@
 			<key>uniqueIdentifier</key>
 			<string>F0AAE168-0844-4325-98BC-738ABFDFBE21</string>
 		</dict>
+		<key>F0BDF313-4943-4A1F-BA84-B1B4BD2A7298</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F0BDF313-4943-4A1F-BA84-B1B4BD2A7298.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>cpplox project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>cpplox</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build cpplox</string>
+			<key>timeStartedRecording</key>
+			<real>773523325.07703197</real>
+			<key>timeStoppedRecording</key>
+			<real>773523326.41079402</real>
+			<key>title</key>
+			<string>Build cpplox</string>
+			<key>uniqueIdentifier</key>
+			<string>F0BDF313-4943-4A1F-BA84-B1B4BD2A7298</string>
+		</dict>
+		<key>F1180EE5-D0A5-4F2A-AB0F-8DCF030D74F1</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F1180EE5-D0A5-4F2A-AB0F-8DCF030D74F1.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>cpplox project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>cpplox</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build cpplox</string>
+			<key>timeStartedRecording</key>
+			<real>773545372.30328095</real>
+			<key>timeStoppedRecording</key>
+			<real>773545373.62987804</real>
+			<key>title</key>
+			<string>Build cpplox</string>
+			<key>uniqueIdentifier</key>
+			<string>F1180EE5-D0A5-4F2A-AB0F-8DCF030D74F1</string>
+		</dict>
 		<key>F2469A42-92A7-4A4A-BA56-F5BC90DB0FB8</key>
 		<dict>
 			<key>className</key>
@@ -16973,6 +17645,48 @@
 			<string>Build cpplox</string>
 			<key>uniqueIdentifier</key>
 			<string>F35090C8-77B4-4261-9E94-12448A3E5283</string>
+		</dict>
+		<key>F3855EE4-69ED-445D-99BD-C46472F44E8F</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F3855EE4-69ED-445D-99BD-C46472F44E8F.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>cpplox project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>cpplox</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build cpplox</string>
+			<key>timeStartedRecording</key>
+			<real>773545376.05487502</real>
+			<key>timeStoppedRecording</key>
+			<real>773545376.12803602</real>
+			<key>title</key>
+			<string>Build cpplox</string>
+			<key>uniqueIdentifier</key>
+			<string>F3855EE4-69ED-445D-99BD-C46472F44E8F</string>
 		</dict>
 		<key>F3CEEA6E-09FE-4BA4-ADFF-63C0DEC7B8EA</key>
 		<dict>
