@@ -13,10 +13,13 @@ class Environment;
 struct LoxInstance;
 struct LoxClass;
 
+/// Anything that is callable must be stuffable into a std::function.
 struct Callable {
     friend std::ostream& operator<<(std::ostream& stream, const Callable& callable);
     
     int arity{0};
+    
+    /// Note that std::function only works with things that are copyable, that means for example std::unique_ptr will not work in a std::function.
     std::function<std::any (const std::vector<std::any>&)> func;
     
 };

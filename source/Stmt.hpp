@@ -19,7 +19,11 @@ struct FunctionDeclStatementProxy;
 struct ReturnStatement;
 struct ClassDeclStatement;
 
+// If you want to iterate over the AST you need to implement this interface.
 struct StmtVisitor {
+    StmtVisitor(){ }
+    virtual ~StmtVisitor(){ }
+    
     virtual void visit(const PrintStatement& stmt) = 0;
     virtual void visit(const ExpressionStatement& stmt) = 0;
     virtual void visit(const VariableDeclStatement& stmt) = 0;
@@ -75,8 +79,8 @@ struct ExpressionStatement: public Stmt {
 // ---
 
 struct VariableDeclStatement: public Stmt {
-    Token  name;
-    std::unique_ptr<Expr> initializer;
+    Token                   name;
+    std::unique_ptr<Expr>   initializer;
     
     VariableDeclStatement(const Token& name,
                           std::unique_ptr<Expr> initializer):
@@ -229,8 +233,8 @@ struct ReturnStatement: public Stmt {
 // ---
 
 struct ClassDeclStatement: public Stmt {
-    Token name;
-    std::unique_ptr<VariableExpr> super_class;
+    Token                                               name;
+    std::unique_ptr<VariableExpr>                       super_class;
     std::vector<std::shared_ptr<FunctionDeclStatement>> methods;
     
     ClassDeclStatement(const Token& name,

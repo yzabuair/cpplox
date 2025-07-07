@@ -22,7 +22,11 @@ struct SetExpr;
 struct ThisExpr;
 struct SuperExpr;
 
+/// Anyone that needs to iterate over the AST must implment this interface.
 struct ExprVisitor {
+    ExprVisitor(){ }
+    virtual ~ExprVisitor(){ }
+    
     virtual void visit(const AssignExpr& expr) = 0;
     virtual void visit(const BinaryExpr& expr) = 0;
     virtual void visit(const LiteralExpr& expr) = 0;
@@ -50,8 +54,8 @@ struct Expr {
 // ---
 
 struct AssignExpr: public Expr {
-    Token name;
-    std::unique_ptr<Expr> value;
+    Token                   name;
+    std::unique_ptr<Expr>   value;
     
     AssignExpr(const Token& name,
                std::unique_ptr<Expr> value): name{name},
@@ -93,9 +97,9 @@ struct LiteralExpr: public Expr {
 // ---
 
 struct BinaryExpr: public Expr {
-    std::unique_ptr<Expr> left;
-    Token operation;
-    std::unique_ptr<Expr> right;
+    std::unique_ptr<Expr>   left;
+    Token                   operation;
+    std::unique_ptr<Expr>   right;
     
     BinaryExpr(std::unique_ptr<Expr> left,
                const Token& operation,
@@ -142,8 +146,8 @@ struct GroupingExpr: public Expr {
 // ---
 
 struct UnaryExpr: public Expr {
-    Token operation;
-    std::unique_ptr<Expr> right;
+    Token                   operation;
+    std::unique_ptr<Expr>   right;
     
     UnaryExpr(const Token& operation,
               std::unique_ptr<Expr> right):
@@ -184,9 +188,9 @@ struct VariableExpr: public Expr {
 // ---
 
 struct LogicalExpr: public Expr {
-    std::unique_ptr<Expr> left;
-    Token operation;
-    std::unique_ptr<Expr> right;
+    std::unique_ptr<Expr>   left;
+    Token                   operation;
+    std::unique_ptr<Expr>   right;
     
     LogicalExpr(std::unique_ptr<Expr> left,
                 Token operation,
@@ -211,9 +215,9 @@ struct LogicalExpr: public Expr {
 // ---
 
 struct CallExpr: public Expr {
-    std::unique_ptr<Expr> callee;
-    Token closing_paren;
-    std::vector<std::unique_ptr<Expr>> args;
+    std::unique_ptr<Expr>               callee;
+    Token                               closing_paren;
+    std::vector<std::unique_ptr<Expr>>  args;
     
     CallExpr(std::unique_ptr<Expr> callee,
              const Token& closing_paren,
@@ -260,9 +264,9 @@ struct GetExpr: public Expr {
 // ---
 
 struct SetExpr: public Expr {
-    std::unique_ptr<Expr> object;
-    Token name;
-    std::unique_ptr<Expr> value;
+    std::unique_ptr<Expr>   object;
+    Token                   name;
+    std::unique_ptr<Expr>   value;
     
     SetExpr(std::unique_ptr<Expr> object,
             const Token& name,

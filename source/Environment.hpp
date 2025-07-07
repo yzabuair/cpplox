@@ -21,7 +21,6 @@ public:
     }
     
     Environment() {
-        
     }
     
     void set_parent(Environment* parent) {
