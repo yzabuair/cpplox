@@ -38,7 +38,7 @@ void Resolver::visit(const VariableExpr& expr) {
         auto itr = scopes_.front().find(expr.name.lexeme);
         if (itr != scopes_.front().end()) {
             if (itr->second == false) {
-                throw ParserError("Can not read local variable in its own initializer.");
+                throw ParserError("Can not read local variable in its own initializer.", expr.name);
             }
         }
     }
@@ -70,7 +70,7 @@ void Resolver::visit(const SetExpr& expr) {
 
 void Resolver::visit(const ThisExpr& expr) {
     if (current_class_ != ClassType::Class) {
-        throw ParserError("Can not use 'this' outside of class.");
+        throw ParserError("Can not use 'this' outside of class.", expr.keyword);
     }
     resolve_local_(expr, expr.keyword);
 }
@@ -123,7 +123,7 @@ void Resolver::visit(const FunctionDeclStatementProxy& stmt_proxy) {
 
 void Resolver::visit(const ReturnStatement& stmt) {
     if (current_func == FunctionType::None) {
-        throw ParserError("Can not return from top-level code.");
+        throw ParserError("Can not return from top-level code.", stmt.keyword);
     }
     
     if (stmt.value) {
@@ -139,7 +139,7 @@ void Resolver::visit(const ClassDeclStatement& stmt) {
     define_(stmt.name);
     if (stmt.super_class &&
         stmt.super_class->name.lexeme == stmt.name.lexeme) {
-        throw ParserError("A class can not inherit from itself");
+        throw ParserError("A class can not inherit from itself", stmt.super_class->name);
     }
     
     if (stmt.super_class) {

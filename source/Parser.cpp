@@ -185,7 +185,7 @@ std::unique_ptr<Stmt> Parser::function_decl_statement_(const std::string& kind) 
     std::vector<Token> params;
     if (!check_(TokenType::RIGHT_PAREN)) {
         if (params.size() >= 255) {
-            throw ParserError("Too many parameters.");
+            throw ParserError("Too many parameters.", name);
         }
         
         do {
@@ -254,7 +254,7 @@ std::unique_ptr<Expr> Parser::assignment_() {
             return SetExpr::create(std::move(get_expr->object), get_expr->name, std::move(value));
         }
         
-        throw ParserError("Invalid assignment target.");
+        throw ParserError("Invalid assignment target.", equals);
     }
     
     return expr;
@@ -367,7 +367,7 @@ std::unique_ptr<Expr> Parser::finish_call_(std::unique_ptr<Expr> callee) {
     if (!check_(TokenType::RIGHT_PAREN)) {
         do {
             if (args.size() >= 255) {
-                throw ParserError("Too many args!");
+                throw ParserError("Too many args!", peek_());
             }
             args.push_back(expression_());
         } while (match_({TokenType::COMMA}));
@@ -417,7 +417,7 @@ std::unique_ptr<Expr> Parser::primary_() {
         return VariableExpr::create(previous_());
     }
     
-    throw ParserError("Expect expression");
+    throw ParserError("Expect expression", peek_());
 }
 
 
@@ -467,7 +467,7 @@ const Token& Parser::consume_(TokenType type, const std::string& message, std::s
         return advance_();
     }
     
-    throw ParserError(message, location);
+    throw ParserError(message, previous_(), location);
 }
 
 

@@ -41,17 +41,17 @@ inline std::ostream& operator<<(std::ostream& stream, const Token& token) {
         case TokenType::NUMBER:
             stream << token.type << " " << token.lexeme << " " << std::get<double>(token.literal) << "\n";
             break;
-//            if (token.literal.index() == 0) {
-//                stream << token.type << " " << token.lexeme << "empty \n";
-//            } else if (token.literal.index() == 1) {
-//                stream << token.type << " " << token.lexeme << " " << std::get<std::string>(token.literal) << "\n";
-//            } else if (token.literal.index() == 2){
-//                stream << token.type << " " << token.lexeme << " " << std::get<double>(token.literal) << "\n";
-//            } else if (token.literal.index() == 3) {
-//                stream << token.type << " " << token.lexeme << " " << std::get<bool>(token.literal) << "\n";
-//            } else {
-//                stream << token.type << " " << token.lexeme << " " << "nil\n";
-//            }
+            if (token.literal.index() == 0) {
+                stream << token.type << " " << token.lexeme << "empty \n";
+            } else if (token.literal.index() == 1) {
+                stream << token.type << " " << token.lexeme << " " << std::get<std::string>(token.literal) << "\n";
+            } else if (token.literal.index() == 2){
+                stream << token.type << " " << token.lexeme << " " << std::get<double>(token.literal) << "\n";
+            } else if (token.literal.index() == 3) {
+                stream << token.type << " " << token.lexeme << " " << std::get<bool>(token.literal) << "\n";
+            } else {
+                stream << token.type << " " << token.lexeme << " " << "nil\n";
+            }
         default:
             stream << token.type << " " << token.lexeme << "\n";
             break;
