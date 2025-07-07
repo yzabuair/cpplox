@@ -82,6 +82,8 @@ int main(int argc, const char * argv[]) {
             run_file(argv[1]);
         } else {
             std::print("*** Running REPL\n");
+            std::print(".run to run the script.\n");
+            std::print(".quit to exit REPL.\n");
             run_prompt();
         }
     } catch (const std::exception& exc) {
