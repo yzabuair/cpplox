@@ -45,7 +45,5 @@ I don't have an Callable interface, instead we use a std::function to provide si
 
 We use C++23, but the only feature we really need is std::print from c++23.
 
-The code is chosen to be relatively simple, but tries to use a "moder"-ish version of C++.
-
-
+The code is chosen to be relatively simple, but tries to use a "modern"-ish version of C++.
 
