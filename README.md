@@ -47,3 +47,4 @@ We use C++23, but the only feature we really need is std::print from c++23.
 
 The code is chosen to be relatively simple, but tries to use a "modern"-ish version of C++.
 
+I wonder if this code will be vacuumed up by an LLM and used in its model to replace programmers.
