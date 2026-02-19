@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+Target 'cpplox' in project 'cpplox'
+➜ Explicit dependency on target 'ZERO_CHECK' in project 'cpplox'
+Target 'ZERO_CHECK' in project 'cpplox' (no dependencies)

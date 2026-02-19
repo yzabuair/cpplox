@@ -1,0 +1,813 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		881CBCAD2D124B5EA6A6EBF2 /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = DBD1FBF1D07F4AD69F305C07 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				671414EE72EDCB933F28BCD5 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+		8EDAA9E624C94A7E8D5B106E /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 400F1CDE4A634A50940C1875 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				2BBBBE33F1417347800A9848 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				6B250A7930044D058DDE1869 /* PBXTargetDependency */,
+				880A8CA4635240B591F40D19 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		19D6FD6AEFA04570B85C2C20 /* /Users/yasserzabuair/github/cpplox/source/LoxInstance.cpp */ = {isa = PBXBuildFile; fileRef = E1A52FD4C49B412792D1A78C /* /Users/yasserzabuair/github/cpplox/source/LoxInstance.cpp */; };
+		21AA928129064975A89956E9 /* /Users/yasserzabuair/github/cpplox/source/main.cpp */ = {isa = PBXBuildFile; fileRef = A0399E9A33E140F9913D61AC /* /Users/yasserzabuair/github/cpplox/source/main.cpp */; };
+		28879B1DDF154041A2C93BBD /* /Users/yasserzabuair/github/cpplox/source/Expr.hpp */ = {isa = PBXBuildFile; fileRef = B3D415CA903A454F86B06627 /* /Users/yasserzabuair/github/cpplox/source/Expr.hpp */; };
+		360E20C29E104CCFA70120EF /* /Users/yasserzabuair/github/cpplox/source/Parser.hpp */ = {isa = PBXBuildFile; fileRef = 4BEFE82996E84CE1B9F9861D /* /Users/yasserzabuair/github/cpplox/source/Parser.hpp */; };
+		42395952F0454156AD7A3EFB /* /Users/yasserzabuair/github/cpplox/source/Environment.cpp */ = {isa = PBXBuildFile; fileRef = 767403884CAA45D5A93C8EA2 /* /Users/yasserzabuair/github/cpplox/source/Environment.cpp */; };
+		440E9D3B1831404899367BF1 /* /Users/yasserzabuair/github/cpplox/source/Interpreter.cpp */ = {isa = PBXBuildFile; fileRef = D1E67C43FA2C4BAAB38DD770 /* /Users/yasserzabuair/github/cpplox/source/Interpreter.cpp */; };
+		45C66EDC58A54788A65A497B /* /Users/yasserzabuair/github/cpplox/source/TokenType.hpp */ = {isa = PBXBuildFile; fileRef = 11B856CF69D4420188BB199E /* /Users/yasserzabuair/github/cpplox/source/TokenType.hpp */; };
+		4D1A2E1850B44E34970AD2D2 /* /Users/yasserzabuair/github/cpplox/source/LoxInstance.hpp */ = {isa = PBXBuildFile; fileRef = 957C75D290884962A611989B /* /Users/yasserzabuair/github/cpplox/source/LoxInstance.hpp */; };
+		5318E04B407844FFAAF7B17F /* /Users/yasserzabuair/github/cpplox/source/Interpreter.hpp */ = {isa = PBXBuildFile; fileRef = 14F6FC114B1642A7933FF00B /* /Users/yasserzabuair/github/cpplox/source/Interpreter.hpp */; };
+		67662D827D52435680AAD592 /* /Users/yasserzabuair/github/cpplox/source/LoxClass.cpp */ = {isa = PBXBuildFile; fileRef = 0AA321E1D8BC414F9A510A79 /* /Users/yasserzabuair/github/cpplox/source/LoxClass.cpp */; };
+		6A7119F94C7346EFACCCC33B /* /Users/yasserzabuair/github/cpplox/source/AstPrinter.cpp */ = {isa = PBXBuildFile; fileRef = 55BD5BAE741E48E5A3637299 /* /Users/yasserzabuair/github/cpplox/source/AstPrinter.cpp */; };
+		745EC5992A464559AD9EAF1D /* /Users/yasserzabuair/github/cpplox/source/Token.hpp */ = {isa = PBXBuildFile; fileRef = 0107C67C611F49CB82EE7234 /* /Users/yasserzabuair/github/cpplox/source/Token.hpp */; };
+		8A6602F2632A4BD8B94BB410 /* /Users/yasserzabuair/github/cpplox/source/Parser.cpp */ = {isa = PBXBuildFile; fileRef = 4D970A53E699418991BA256F /* /Users/yasserzabuair/github/cpplox/source/Parser.cpp */; };
+		8FBA44B707454AD88ECF6F45 /* /Users/yasserzabuair/github/cpplox/source/ParserError.hpp */ = {isa = PBXBuildFile; fileRef = 9118CB79ED0F42FAB6C8C17B /* /Users/yasserzabuair/github/cpplox/source/ParserError.hpp */; };
+		90371F1F46804D4CBEF18065 /* /Users/yasserzabuair/github/cpplox/source/Stmt.hpp */ = {isa = PBXBuildFile; fileRef = 38972C17E0254D4BB6D61925 /* /Users/yasserzabuair/github/cpplox/source/Stmt.hpp */; };
+		A1030EDDB1DE49C38066A2E7 /* /Users/yasserzabuair/github/cpplox/source/Scanner.hpp */ = {isa = PBXBuildFile; fileRef = 647C60D8B8C1411F92E04953 /* /Users/yasserzabuair/github/cpplox/source/Scanner.hpp */; };
+		A31A40ED9F3548B19AFAFD39 /* /Users/yasserzabuair/github/cpplox/source/ScannerError.hpp */ = {isa = PBXBuildFile; fileRef = 4D8ABA7DA00243E8907C06A1 /* /Users/yasserzabuair/github/cpplox/source/ScannerError.hpp */; };
+		A7527AE001924D45AE068EE6 /* /Users/yasserzabuair/github/cpplox/source/Common.hpp */ = {isa = PBXBuildFile; fileRef = E43EECDFC78740DD937B0E7F /* /Users/yasserzabuair/github/cpplox/source/Common.hpp */; };
+		AC1B03FD76684211AC1CE879 /* /Users/yasserzabuair/github/cpplox/source/RuntimeError.hpp */ = {isa = PBXBuildFile; fileRef = 1493ADB565A242C2A21AC729 /* /Users/yasserzabuair/github/cpplox/source/RuntimeError.hpp */; };
+		B75DAF77B7C7482B96AD22D3 /* /Users/yasserzabuair/github/cpplox/source/Resolver.hpp */ = {isa = PBXBuildFile; fileRef = 01AC3DF1C3264AFE96D20E4E /* /Users/yasserzabuair/github/cpplox/source/Resolver.hpp */; };
+		DB3021B8D0CA4013A935E6EF /* /Users/yasserzabuair/github/cpplox/source/LoxClass.hpp */ = {isa = PBXBuildFile; fileRef = 6F72421984E94C808F7D2BA4 /* /Users/yasserzabuair/github/cpplox/source/LoxClass.hpp */; };
+		E89B8A735BD34E68BC7CE961 /* /Users/yasserzabuair/github/cpplox/source/AstPrinter.hpp */ = {isa = PBXBuildFile; fileRef = EC5A9BBB42C642DD8A85C9A2 /* /Users/yasserzabuair/github/cpplox/source/AstPrinter.hpp */; };
+		EE6B095780CD41CABCCD277C /* /Users/yasserzabuair/github/cpplox/source/Scanner.cpp */ = {isa = PBXBuildFile; fileRef = 4E373B3B3CFD4753AD1CC82B /* /Users/yasserzabuair/github/cpplox/source/Scanner.cpp */; };
+		EEBDC2C358004CD6B87C97E1 /* /Users/yasserzabuair/github/cpplox/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 07B3213753B64AA4A916C9B2 /* /Users/yasserzabuair/github/cpplox/CMakeLists.txt */; };
+		EEF08592A15C45E2B497777F /* /Users/yasserzabuair/github/cpplox/source/Resolver.cpp */ = {isa = PBXBuildFile; fileRef = AB2E8C238D294500ABFE3617 /* /Users/yasserzabuair/github/cpplox/source/Resolver.cpp */; };
+		F35A5CFD1AEB4641B6924B15 /* /Users/yasserzabuair/github/cpplox/source/Environment.hpp */ = {isa = PBXBuildFile; fileRef = 8FAEA0B7989341B88393E772 /* /Users/yasserzabuair/github/cpplox/source/Environment.hpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		54DE643F9FF24D5A9B0D6414 /* RelWithDebInfo */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = RelWithDebInfo;
+		};
+		7CD8740381394E139013B4C6 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		A966472EC320486D89349F18 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		D56301D2BCB242C28EC5ECEF /* MinSizeRel */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = MinSizeRel;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		49438B31775E4F5988653E75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8B55D082A624299962585AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 871906CE95F24448A63B9DA4;
+			remoteInfo = cpplox;
+		};
+		96C6ADAB86184006B68127DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8B55D082A624299962585AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 881CBCAD2D124B5EA6A6EBF2;
+			remoteInfo = ZERO_CHECK;
+		};
+		DDE8E163AC194E959F679BD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8B55D082A624299962585AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 881CBCAD2D124B5EA6A6EBF2;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0107C67C611F49CB82EE7234 /* /Users/yasserzabuair/github/cpplox/source/Token.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Token.hpp; path = source/Token.hpp; sourceTree = SOURCE_ROOT; };
+		01AC3DF1C3264AFE96D20E4E /* /Users/yasserzabuair/github/cpplox/source/Resolver.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Resolver.hpp; path = source/Resolver.hpp; sourceTree = SOURCE_ROOT; };
+		07B3213753B64AA4A916C9B2 /* /Users/yasserzabuair/github/cpplox/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		0AA321E1D8BC414F9A510A79 /* /Users/yasserzabuair/github/cpplox/source/LoxClass.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = LoxClass.cpp; path = source/LoxClass.cpp; sourceTree = SOURCE_ROOT; };
+		11B856CF69D4420188BB199E /* /Users/yasserzabuair/github/cpplox/source/TokenType.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = TokenType.hpp; path = source/TokenType.hpp; sourceTree = SOURCE_ROOT; };
+		1493ADB565A242C2A21AC729 /* /Users/yasserzabuair/github/cpplox/source/RuntimeError.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = RuntimeError.hpp; path = source/RuntimeError.hpp; sourceTree = SOURCE_ROOT; };
+		14F6FC114B1642A7933FF00B /* /Users/yasserzabuair/github/cpplox/source/Interpreter.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Interpreter.hpp; path = source/Interpreter.hpp; sourceTree = SOURCE_ROOT; };
+		38972C17E0254D4BB6D61925 /* /Users/yasserzabuair/github/cpplox/source/Stmt.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Stmt.hpp; path = source/Stmt.hpp; sourceTree = SOURCE_ROOT; };
+		3ABA1A60FED741A1BDA0146E /* cpplox */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = cpplox; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BEFE82996E84CE1B9F9861D /* /Users/yasserzabuair/github/cpplox/source/Parser.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Parser.hpp; path = source/Parser.hpp; sourceTree = SOURCE_ROOT; };
+		4D8ABA7DA00243E8907C06A1 /* /Users/yasserzabuair/github/cpplox/source/ScannerError.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = ScannerError.hpp; path = source/ScannerError.hpp; sourceTree = SOURCE_ROOT; };
+		4D970A53E699418991BA256F /* /Users/yasserzabuair/github/cpplox/source/Parser.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Parser.cpp; path = source/Parser.cpp; sourceTree = SOURCE_ROOT; };
+		4E373B3B3CFD4753AD1CC82B /* /Users/yasserzabuair/github/cpplox/source/Scanner.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Scanner.cpp; path = source/Scanner.cpp; sourceTree = SOURCE_ROOT; };
+		55BD5BAE741E48E5A3637299 /* /Users/yasserzabuair/github/cpplox/source/AstPrinter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = AstPrinter.cpp; path = source/AstPrinter.cpp; sourceTree = SOURCE_ROOT; };
+		647C60D8B8C1411F92E04953 /* /Users/yasserzabuair/github/cpplox/source/Scanner.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Scanner.hpp; path = source/Scanner.hpp; sourceTree = SOURCE_ROOT; };
+		6F72421984E94C808F7D2BA4 /* /Users/yasserzabuair/github/cpplox/source/LoxClass.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = LoxClass.hpp; path = source/LoxClass.hpp; sourceTree = SOURCE_ROOT; };
+		767403884CAA45D5A93C8EA2 /* /Users/yasserzabuair/github/cpplox/source/Environment.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Environment.cpp; path = source/Environment.cpp; sourceTree = SOURCE_ROOT; };
+		8FAEA0B7989341B88393E772 /* /Users/yasserzabuair/github/cpplox/source/Environment.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Environment.hpp; path = source/Environment.hpp; sourceTree = SOURCE_ROOT; };
+		9118CB79ED0F42FAB6C8C17B /* /Users/yasserzabuair/github/cpplox/source/ParserError.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = ParserError.hpp; path = source/ParserError.hpp; sourceTree = SOURCE_ROOT; };
+		957C75D290884962A611989B /* /Users/yasserzabuair/github/cpplox/source/LoxInstance.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = LoxInstance.hpp; path = source/LoxInstance.hpp; sourceTree = SOURCE_ROOT; };
+		A0399E9A33E140F9913D61AC /* /Users/yasserzabuair/github/cpplox/source/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = source/main.cpp; sourceTree = SOURCE_ROOT; };
+		AB2E8C238D294500ABFE3617 /* /Users/yasserzabuair/github/cpplox/source/Resolver.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Resolver.cpp; path = source/Resolver.cpp; sourceTree = SOURCE_ROOT; };
+		B3D415CA903A454F86B06627 /* /Users/yasserzabuair/github/cpplox/source/Expr.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Expr.hpp; path = source/Expr.hpp; sourceTree = SOURCE_ROOT; };
+		B70FE9B4A2C74041A64194DD /* /Users/yasserzabuair/github/cpplox/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		D1E67C43FA2C4BAAB38DD770 /* /Users/yasserzabuair/github/cpplox/source/Interpreter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = Interpreter.cpp; path = source/Interpreter.cpp; sourceTree = SOURCE_ROOT; };
+		E1A52FD4C49B412792D1A78C /* /Users/yasserzabuair/github/cpplox/source/LoxInstance.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = LoxInstance.cpp; path = source/LoxInstance.cpp; sourceTree = SOURCE_ROOT; };
+		E43EECDFC78740DD937B0E7F /* /Users/yasserzabuair/github/cpplox/source/Common.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Common.hpp; path = source/Common.hpp; sourceTree = SOURCE_ROOT; };
+		EC5A9BBB42C642DD8A85C9A2 /* /Users/yasserzabuair/github/cpplox/source/AstPrinter.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = AstPrinter.hpp; path = source/AstPrinter.hpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9DAE14FB6BBA43C186DABC13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		642796D657574196850079C6 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				DEF6E8CA36C84D6397046231 /* CMake Rules */,
+				B70FE9B4A2C74041A64194DD /* /Users/yasserzabuair/github/cpplox/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		679C202242584430ABBD7B65 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				55BD5BAE741E48E5A3637299 /* /Users/yasserzabuair/github/cpplox/source/AstPrinter.cpp */,
+				767403884CAA45D5A93C8EA2 /* /Users/yasserzabuair/github/cpplox/source/Environment.cpp */,
+				D1E67C43FA2C4BAAB38DD770 /* /Users/yasserzabuair/github/cpplox/source/Interpreter.cpp */,
+				0AA321E1D8BC414F9A510A79 /* /Users/yasserzabuair/github/cpplox/source/LoxClass.cpp */,
+				E1A52FD4C49B412792D1A78C /* /Users/yasserzabuair/github/cpplox/source/LoxInstance.cpp */,
+				4D970A53E699418991BA256F /* /Users/yasserzabuair/github/cpplox/source/Parser.cpp */,
+				AB2E8C238D294500ABFE3617 /* /Users/yasserzabuair/github/cpplox/source/Resolver.cpp */,
+				4E373B3B3CFD4753AD1CC82B /* /Users/yasserzabuair/github/cpplox/source/Scanner.cpp */,
+				A0399E9A33E140F9913D61AC /* /Users/yasserzabuair/github/cpplox/source/main.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		6A6779E5902143A5BD5BF203 /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC5A9BBB42C642DD8A85C9A2 /* /Users/yasserzabuair/github/cpplox/source/AstPrinter.hpp */,
+				E43EECDFC78740DD937B0E7F /* /Users/yasserzabuair/github/cpplox/source/Common.hpp */,
+				8FAEA0B7989341B88393E772 /* /Users/yasserzabuair/github/cpplox/source/Environment.hpp */,
+				B3D415CA903A454F86B06627 /* /Users/yasserzabuair/github/cpplox/source/Expr.hpp */,
+				14F6FC114B1642A7933FF00B /* /Users/yasserzabuair/github/cpplox/source/Interpreter.hpp */,
+				6F72421984E94C808F7D2BA4 /* /Users/yasserzabuair/github/cpplox/source/LoxClass.hpp */,
+				957C75D290884962A611989B /* /Users/yasserzabuair/github/cpplox/source/LoxInstance.hpp */,
+				4BEFE82996E84CE1B9F9861D /* /Users/yasserzabuair/github/cpplox/source/Parser.hpp */,
+				9118CB79ED0F42FAB6C8C17B /* /Users/yasserzabuair/github/cpplox/source/ParserError.hpp */,
+				01AC3DF1C3264AFE96D20E4E /* /Users/yasserzabuair/github/cpplox/source/Resolver.hpp */,
+				1493ADB565A242C2A21AC729 /* /Users/yasserzabuair/github/cpplox/source/RuntimeError.hpp */,
+				647C60D8B8C1411F92E04953 /* /Users/yasserzabuair/github/cpplox/source/Scanner.hpp */,
+				4D8ABA7DA00243E8907C06A1 /* /Users/yasserzabuair/github/cpplox/source/ScannerError.hpp */,
+				38972C17E0254D4BB6D61925 /* /Users/yasserzabuair/github/cpplox/source/Stmt.hpp */,
+				0107C67C611F49CB82EE7234 /* /Users/yasserzabuair/github/cpplox/source/Token.hpp */,
+				11B856CF69D4420188BB199E /* /Users/yasserzabuair/github/cpplox/source/TokenType.hpp */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		75CDBEC5F762455F9F0EE9FB /* cpplox */ = {
+			isa = PBXGroup;
+			children = (
+				679C202242584430ABBD7B65 /* Source Files */,
+				6A6779E5902143A5BD5BF203 /* Header Files */,
+				07B3213753B64AA4A916C9B2 /* /Users/yasserzabuair/github/cpplox/CMakeLists.txt */,
+			);
+			name = cpplox;
+			sourceTree = "<group>";
+		};
+		9C3EA2D9A5F845BFBD919C4B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3ABA1A60FED741A1BDA0146E /* cpplox */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7DBAF944F8A4985A21F6C64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB3EA6F47B374A97A1FE54DE = {
+			isa = PBXGroup;
+			children = (
+				75CDBEC5F762455F9F0EE9FB /* cpplox */,
+				642796D657574196850079C6 /* ALL_BUILD */,
+				9C3EA2D9A5F845BFBD919C4B /* Products */,
+				A7DBAF944F8A4985A21F6C64 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DEF6E8CA36C84D6397046231 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		871906CE95F24448A63B9DA4 /* cpplox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1ABF1B8F814A49E6AE7E6679 /* Build configuration list for PBXNativeTarget "cpplox" */;
+			buildPhases = (
+				3947818E541E40D2BAF2A72A /* Sources */,
+				9DAE14FB6BBA43C186DABC13 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B4F8AB9370B429E9550D14E /* PBXTargetDependency */,
+			);
+			name = cpplox;
+			productName = cpplox;
+			productReference = 3ABA1A60FED741A1BDA0146E /* cpplox */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C8B55D082A624299962585AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1630;
+			};
+			buildConfigurationList = E410242ACF8440FB9365C679 /* Build configuration list for PBXProject "cpplox" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				7CD8740381394E139013B4C6 /* Debug */,
+				A966472EC320486D89349F18 /* Release */,
+				D56301D2BCB242C28EC5ECEF /* MinSizeRel */,
+				54DE643F9FF24D5A9B0D6414 /* RelWithDebInfo */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = BB3EA6F47B374A97A1FE54DE;
+			projectDirPath = /Users/yasserzabuair/github/cpplox;
+			projectRoot = "";
+			targets = (
+				8EDAA9E624C94A7E8D5B106E /* ALL_BUILD */,
+				881CBCAD2D124B5EA6A6EBF2 /* ZERO_CHECK */,
+				871906CE95F24448A63B9DA4 /* cpplox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BBBBE33F1417347800A9848 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+/Users/yasserzabuair/github/cpplox/build/CMakeFiles/ALL_BUILD			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/yasserzabuair/github/cpplox/build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/yasserzabuair/github/cpplox/build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/yasserzabuair/github/cpplox/build
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/yasserzabuair/github/cpplox/build
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		671414EE72EDCB933F28BCD5 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+/Users/yasserzabuair/github/cpplox/build/CMakeFiles/ZERO_CHECK			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/yasserzabuair/github/cpplox/build
+  make -f /Users/yasserzabuair/github/cpplox/build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/yasserzabuair/github/cpplox/build
+  make -f /Users/yasserzabuair/github/cpplox/build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"MinSizeRel\"; then :
+  cd /Users/yasserzabuair/github/cpplox/build
+  make -f /Users/yasserzabuair/github/cpplox/build/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"RelWithDebInfo\"; then :
+  cd /Users/yasserzabuair/github/cpplox/build
+  make -f /Users/yasserzabuair/github/cpplox/build/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3947818E541E40D2BAF2A72A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A7119F94C7346EFACCCC33B /* /Users/yasserzabuair/github/cpplox/source/AstPrinter.cpp */,
+				42395952F0454156AD7A3EFB /* /Users/yasserzabuair/github/cpplox/source/Environment.cpp */,
+				440E9D3B1831404899367BF1 /* /Users/yasserzabuair/github/cpplox/source/Interpreter.cpp */,
+				67662D827D52435680AAD592 /* /Users/yasserzabuair/github/cpplox/source/LoxClass.cpp */,
+				19D6FD6AEFA04570B85C2C20 /* /Users/yasserzabuair/github/cpplox/source/LoxInstance.cpp */,
+				8A6602F2632A4BD8B94BB410 /* /Users/yasserzabuair/github/cpplox/source/Parser.cpp */,
+				EEF08592A15C45E2B497777F /* /Users/yasserzabuair/github/cpplox/source/Resolver.cpp */,
+				EE6B095780CD41CABCCD277C /* /Users/yasserzabuair/github/cpplox/source/Scanner.cpp */,
+				21AA928129064975A89956E9 /* /Users/yasserzabuair/github/cpplox/source/main.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B4F8AB9370B429E9550D14E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 881CBCAD2D124B5EA6A6EBF2 /* ZERO_CHECK */;
+			targetProxy = DDE8E163AC194E959F679BD9 /* PBXContainerItemProxy */;
+		};
+		6B250A7930044D058DDE1869 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 881CBCAD2D124B5EA6A6EBF2 /* ZERO_CHECK */;
+			targetProxy = 96C6ADAB86184006B68127DE /* PBXContainerItemProxy */;
+		};
+		880A8CA4635240B591F40D19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 871906CE95F24448A63B9DA4 /* cpplox */;
+			targetProxy = 49438B31775E4F5988653E75 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		233AC91A3974435CBA6BDDC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		272ADE45943E4B10980CB2F0 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		54FC45A72AE84A2290B42E49 /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		55D2B7EBD8FD4962B669ADDD /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/yasserzabuair/github/cpplox/build/build;
+			};
+			name = RelWithDebInfo;
+		};
+		56B3AA79D8954CB98AEBF324 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		5FE382BE840F42A3996FEDE4 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/yasserzabuair/github/cpplox/build/build;
+			};
+			name = MinSizeRel;
+		};
+		6BDFB094CF5C43669979F2A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SYMROOT = /Users/yasserzabuair/github/cpplox/build/build;
+			};
+			name = Release;
+		};
+		7333F63472264CB5B9C70A47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		742A1B3178BC477681EBF8DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.4.sdk;
+				SYMROOT = /Users/yasserzabuair/github/cpplox/build/build;
+			};
+			name = Debug;
+		};
+		7A9273288A144B90B8FB4326 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/yasserzabuair/github/cpplox/build/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++2b' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = cpplox;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/yasserzabuair/github/cpplox/build/build/cpplox.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		86B9730C6D844B4389406D7C /* RelWithDebInfo */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/yasserzabuair/github/cpplox/build/RelWithDebInfo;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 2;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "       -DNDEBUG '-std=gnu++2b' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = cpplox;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/yasserzabuair/github/cpplox/build/build/cpplox.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = RelWithDebInfo;
+		};
+		9CCAA4C815BA4A49878E1B11 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/yasserzabuair/github/cpplox/build/MinSizeRel;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "    -DNDEBUG '-std=gnu++2b' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = cpplox;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/yasserzabuair/github/cpplox/build/build/cpplox.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		AC4A58762D5F45FE8DA59FFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		B5CC5A4C755A437DA4864B42 /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+		DBAF9C774E7549139DFE07AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/yasserzabuair/github/cpplox/build/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CPLUSPLUSFLAGS = "   '-std=gnu++2b' ";
+				OTHER_LDFLAGS = (" -Wl,-search_paths_first -Wl,-headerpad_max_install_names","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = cpplox;
+				SECTORDER_FLAGS = "";
+				TARGET_TEMP_DIR = "/Users/yasserzabuair/github/cpplox/build/build/cpplox.build/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		EA45E4196E46404D8CB7E74D /* MinSizeRel */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = MinSizeRel;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1ABF1B8F814A49E6AE7E6679 /* Build configuration list for PBXNativeTarget "cpplox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBAF9C774E7549139DFE07AC /* Debug */,
+				7A9273288A144B90B8FB4326 /* Release */,
+				9CCAA4C815BA4A49878E1B11 /* MinSizeRel */,
+				86B9730C6D844B4389406D7C /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		400F1CDE4A634A50940C1875 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC4A58762D5F45FE8DA59FFD /* Debug */,
+				233AC91A3974435CBA6BDDC5 /* Release */,
+				EA45E4196E46404D8CB7E74D /* MinSizeRel */,
+				54FC45A72AE84A2290B42E49 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DBD1FBF1D07F4AD69F305C07 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				56B3AA79D8954CB98AEBF324 /* Debug */,
+				7333F63472264CB5B9C70A47 /* Release */,
+				B5CC5A4C755A437DA4864B42 /* MinSizeRel */,
+				272ADE45943E4B10980CB2F0 /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E410242ACF8440FB9365C679 /* Build configuration list for PBXProject "cpplox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				742A1B3178BC477681EBF8DC /* Debug */,
+				6BDFB094CF5C43669979F2A1 /* Release */,
+				5FE382BE840F42A3996FEDE4 /* MinSizeRel */,
+				55D2B7EBD8FD4962B669ADDD /* RelWithDebInfo */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C8B55D082A624299962585AF /* Project object */;
+}

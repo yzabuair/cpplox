@@ -1,0 +1,3 @@
+/Users/yasserzabuair/github/cpplox/build/CMakeFiles/cpplox.dir
+/Users/yasserzabuair/github/cpplox/build/CMakeFiles/ALL_BUILD.dir
+/Users/yasserzabuair/github/cpplox/build/CMakeFiles/ZERO_CHECK.dir
